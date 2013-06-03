@@ -1,0 +1,11 @@
+//
+//  FishLamp-OSX-64.xcconfig
+//  
+//
+//  Created by Mike Fullerton on 12/10/12.
+//
+//
+ARCHS = $(ARCHS_STANDARD_64_BIT)
+SUPPORTED_PLATFORMS = macosx
+SDKROOT = macosx
+FISHLAMP_TARGET = FISHLAMP_TARGET_OSX_64=1

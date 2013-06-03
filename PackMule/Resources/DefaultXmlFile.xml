@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<code projectName="FishLamp">
+
+    <organization name="GreenTongue Software LLC, Mike Fullerton"/>
+    
+	<license>
+        <licenseName>The FishLamp Framework is released under the MIT License: http://fishlamp.com/license</licenseName>
+    </license>
+
+    <generatorOptions typePrefix="FL"/>
+
+    <!-- Example enums -->
+    
+    <enumTypes>
+        <enumType typeName="ExampleEnum">
+            <enums>
+                <enum name="foo"/>
+                <enum name="bar"/>
+                <enum name="foobar"/>
+            </enums>
+        </enumType>
+    </enumTypes>
+    
+    <!-- example imported types --> 
+    
+    <typeDefinitions>
+        <typeDefinition typeName="FLGuid" import="FLGuid.h" dataType="Object"/>
+    </typeDefinitions>
+    
+    
+    <imports>
+        <!-- import another file. The values defined in the parent file override the values in the child -->
+        <!--
+          <import path="AnotherCodeFile.flproj" type="File"/>
+          -->
+    </imports>
+    
+    <!-- example object defininition -->
+    
+    <objects>
+        <object className="FLTestObject" protocols="NSCopying, NSCoding">
+            <properties>
+                <property name="name" type="string"/>
+                <property name="number" type="float"/>
+                <property type="int" name="testInt" defaultValue="5">
+                    <storageOptions isIndexed="YES"/>
+                </property>
+                <property type="int" name="anotherInt">
+                    <storageOptions isRequired="YES"/>
+                </property>
+                <property type="CGRect" name="rect"/>
+                <property type="CGPoint" name="point"/>
+                <property type="CGSize" name="size"/>
+                <property type="MyEnum" name="stateEnum" defaultValue="FLMyEnumfoobar"/>
+                <property type="bool" name="myBool" defaultValue="YES"/>
+                <property type="FLGuid" name="databaseGuid">
+                    <storageOptions isPrimaryKey="YES"/>
+                </property>
+                <property type="date" name="dateModified"/>
+                <property type="date" name="dateCreated" comment="This is the date the object was created"/>
+                <property type="date" name="expireDate"/>
+                <property type="string" name="foo" useForEquality="YES"/>
+                <property name="hello" type="NSString" defaultValue="hello!"/>
+                <property name="staticHello" type="NSString" defaultValue="static hello!" isStatic="YES"/>
+                <property name="foop" type="NSString" defaultValue="foop" isImmutable="YES"/>
+                <property name="iLikeRum" type="NSString" defaultValue="Captain Morgan" isImmutable="YES" isStatic="YES"/>
+                <property type="float" name="testFloat"/>
+                <property type="array" name="anArray">
+                    <arrayTypes>
+                        <arrayType name="item" typeName="string"/>
+                        <arrayType name="number" typeName="int"/>
+                        <arrayType name="parser" typeName="FLXmlParser"/>
+                    </arrayTypes>
+                </property>
+            </properties>
+        </object>
+    </objects>
+</code>

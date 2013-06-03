@@ -1,0 +1,11 @@
+//
+//  FishLampiOS.xcconfig
+//  
+//
+//  Created by Mike Fullerton on 12/10/12.
+//
+//
+SUPPORTED_PLATFORMS = iphonesimulator iphoneos
+FISHLAMP_TARGET = FISHLAMP_TARGET_IOS=1
+ARCHS = armv7 armv7s
+SDKROOT = iphoneos

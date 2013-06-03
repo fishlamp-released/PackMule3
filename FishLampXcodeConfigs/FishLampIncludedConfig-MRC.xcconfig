@@ -1,0 +1,10 @@
+//
+//  FishLamp-MRC.xcconfig
+//  
+//
+//  Created by Mike Fullerton on 12/10/12.
+//
+//
+CLANG_ENABLE_OBJC_ARC = NO
+MACOSX_DEPLOYMENT_TARGET = 10.6
+IPHONEOS_DEPLOYMENT_TARGET = 5.0
