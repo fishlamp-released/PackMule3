@@ -28,14 +28,14 @@
 		274A4AE5161268AA0069944E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274A4AE4161268AA0069944E /* Security.framework */; };
 		274A4AE7161268AB0069944E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274A4AE6161268AA0069944E /* SystemConfiguration.framework */; };
 		274A4B72161269590069944E /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 274A4B71161269590069944E /* libsqlite3.0.dylib */; };
-		279128B3175D523E00977957 /* libFishLampCodeGenerator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 279128B2175D523E00977957 /* libFishLampCodeGenerator.a */; };
-		279128C4175D526400977957 /* libFishLampOSX-64-MRC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2721A807175D47BC00D94132 /* libFishLampOSX-64-MRC.a */; };
-		27B361DB175D5064002A4A3E /* libFishLampCocoa-OSX-64-MRC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2797C622175D462200FBD667 /* libFishLampCocoa-OSX-64-MRC.a */; };
-		27B361DC175D5064002A4A3E /* libFishLampCocoaUI-OSX-64-MRC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2797C610175D462100FBD667 /* libFishLampCocoaUI-OSX-64-MRC.a */; };
-		27B361DD175D5064002A4A3E /* libFishLampCore-OSX-64-MRC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2797C635175D462200FBD667 /* libFishLampCore-OSX-64-MRC.a */; };
-		27B361FA175D5163002A4A3E /* attention.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B361F7175D5163002A4A3E /* attention.png */; };
-		27B361FB175D5163002A4A3E /* attention@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B361F8175D5163002A4A3E /* attention@2x.png */; };
-		27B361FC175D5163002A4A3E /* FLErrorWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27B361F9175D5163002A4A3E /* FLErrorWindowController.xib */; };
+		274D0C2E175D5D5B00B99DB6 /* libFishLampCocoa-OSX-64-MRC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 274D0C0F175D5CFC00B99DB6 /* libFishLampCocoa-OSX-64-MRC.a */; };
+		274D0C2F175D5D5B00B99DB6 /* libFishLampCocoaUI-OSX-64-MRC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 274D0BFD175D5CFC00B99DB6 /* libFishLampCocoaUI-OSX-64-MRC.a */; };
+		274D0C30175D5D5B00B99DB6 /* libFishLampCore-OSX-64-MRC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 274D0BEC175D5CFC00B99DB6 /* libFishLampCore-OSX-64-MRC.a */; };
+		274D0C31175D5D5B00B99DB6 /* libFishLampOSX-64-MRC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 274D0C1F175D5CFD00B99DB6 /* libFishLampOSX-64-MRC.a */; };
+		274D0C32175D5D6600B99DB6 /* libFishLampCodeGenerator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 274D0BDD175D5CFC00B99DB6 /* libFishLampCodeGenerator.a */; };
+		279128D9175D5C8D00977957 /* attention.png in Resources */ = {isa = PBXBuildFile; fileRef = 279128D6175D5C8D00977957 /* attention.png */; };
+		279128DA175D5C8D00977957 /* attention@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 279128D7175D5C8D00977957 /* attention@2x.png */; };
+		279128DB175D5C8D00977957 /* FLErrorWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 279128D8175D5C8D00977957 /* FLErrorWindowController.xib */; };
 		27B4D2391755316E008540B8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 27B4D22B1755316E008540B8 /* Credits.rtf */; };
 		27B4D23A1755316E008540B8 /* DefaultXmlFile.xml in Resources */ = {isa = PBXBuildFile; fileRef = 27B4D22C1755316E008540B8 /* DefaultXmlFile.xml */; };
 		27B4D23B1755316E008540B8 /* FLCodeGeneratorDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27B4D22D1755316E008540B8 /* FLCodeGeneratorDocument.xib */; };
@@ -56,194 +56,194 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2721A804175D47BC00D94132 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 273BB0CB175D4572005AC73E /* FishLampOSX.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 27048EF0161CB58600C38ADA;
-			remoteInfo = "FishLampOSX-32-MRC";
-		};
-		2721A806175D47BC00D94132 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 273BB0CB175D4572005AC73E /* FishLampOSX.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 27A43AC415CDCCCB001CB13E;
-			remoteInfo = "FishLampOSX-64-MRC";
-		};
-		2721A808175D47BC00D94132 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 273BB0CB175D4572005AC73E /* FishLampOSX.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 27314C79165328400027850D;
-			remoteInfo = "FishLampOSX-64-ARC";
-		};
-		2721A80A175D47BC00D94132 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 273BB0CB175D4572005AC73E /* FishLampOSX.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 27CBC1F416768BA600753D0A;
-			remoteInfo = "FishLampOSX-3264-MRC";
-		};
-		27681C71175D483800AC25CA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2721A829175D47CA00D94132 /* FishLampCodeGenerator.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2787B46117415B720010C2C6;
-			remoteInfo = FishLampCodeGeneratorTester;
-		};
-		279128B1175D523E00977957 /* PBXContainerItemProxy */ = {
+		274D0BDC175D5CFC00B99DB6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2721A829175D47CA00D94132 /* FishLampCodeGenerator.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 279FFBEC175D4CCB003F06C4;
 			remoteInfo = "FishLampCodeGenerator-64-MRC";
 		};
-		2797C60B175D462100FBD667 /* PBXContainerItemProxy */ = {
+		274D0BDE175D5CFC00B99DB6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 273BB0CA175D4572005AC73E /* FishLampCocoaUI.xcodeproj */;
+			containerPortal = 2721A829175D47CA00D94132 /* FishLampCodeGenerator.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 27A43AB415CDCC89001CB13E;
-			remoteInfo = "FishLampCocoaUI-iOS-ARC";
+			remoteGlobalIDString = 2787B46117415B720010C2C6;
+			remoteInfo = FishLampCodeGeneratorTester;
 		};
-		2797C60D175D462100FBD667 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 273BB0CA175D4572005AC73E /* FishLampCocoaUI.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 27048EF0161CB58600C38ADA;
-			remoteInfo = "FishLampCocoaUI-OSX-32-MRC";
-		};
-		2797C60F175D462100FBD667 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 273BB0CA175D4572005AC73E /* FishLampCocoaUI.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 27A43AC415CDCCCB001CB13E;
-			remoteInfo = "FishLampCocoaUI-OSX-64-MRC";
-		};
-		2797C611175D462100FBD667 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 273BB0CA175D4572005AC73E /* FishLampCocoaUI.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 27314C79165328400027850D;
-			remoteInfo = "FishLampCocoaUI-OSX-64-ARC";
-		};
-		2797C613175D462100FBD667 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 273BB0CA175D4572005AC73E /* FishLampCocoaUI.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 27CBC1F416768BA600753D0A;
-			remoteInfo = "FishLampCocoaUI-OSX-3264-MRC";
-		};
-		2797C61D175D462200FBD667 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 273BB0C9175D4572005AC73E /* FishLampCocoa.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 27A43AB415CDCC89001CB13E;
-			remoteInfo = "FishLampCocoa-iOS-ARC";
-		};
-		2797C61F175D462200FBD667 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 273BB0C9175D4572005AC73E /* FishLampCocoa.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 27048EF0161CB58600C38ADA;
-			remoteInfo = "FishLampCocoa-OSX-32-MRC";
-		};
-		2797C621175D462200FBD667 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 273BB0C9175D4572005AC73E /* FishLampCocoa.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 27A43AC415CDCCCB001CB13E;
-			remoteInfo = "FishLampCocoa-OSX-64-MRC";
-		};
-		2797C623175D462200FBD667 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 273BB0C9175D4572005AC73E /* FishLampCocoa.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 27314C79165328400027850D;
-			remoteInfo = "FishLampCocoa-OSX-64-ARC";
-		};
-		2797C625175D462200FBD667 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 273BB0C9175D4572005AC73E /* FishLampCocoa.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 27CBC1F416768BA600753D0A;
-			remoteInfo = "FishLampCocoa-OSX-3264-MRC";
-		};
-		2797C627175D462200FBD667 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 273BB0C9175D4572005AC73E /* FishLampCocoa.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 27C62D39170B45C80093F260;
-			remoteInfo = "FishLampCocoaTestTool-64-MRC";
-		};
-		2797C630175D462200FBD667 /* PBXContainerItemProxy */ = {
+		274D0BE7175D5CFC00B99DB6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 273BB0C8175D4572005AC73E /* FishLampCore.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 27A43AB415CDCC89001CB13E;
 			remoteInfo = "FishLampCore-iOS-ARC";
 		};
-		2797C632175D462200FBD667 /* PBXContainerItemProxy */ = {
+		274D0BE9175D5CFC00B99DB6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 273BB0C8175D4572005AC73E /* FishLampCore.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 27048EF0161CB58600C38ADA;
 			remoteInfo = "FishLampCore-OSX-32-MRC";
 		};
-		2797C634175D462200FBD667 /* PBXContainerItemProxy */ = {
+		274D0BEB175D5CFC00B99DB6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 273BB0C8175D4572005AC73E /* FishLampCore.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 27A43AC415CDCCCB001CB13E;
 			remoteInfo = "FishLampCore-OSX-64-MRC";
 		};
-		2797C636175D462200FBD667 /* PBXContainerItemProxy */ = {
+		274D0BED175D5CFC00B99DB6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 273BB0C8175D4572005AC73E /* FishLampCore.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 27314C79165328400027850D;
 			remoteInfo = "FishLampCore-OSX-64-ARC";
 		};
-		2797C638175D462200FBD667 /* PBXContainerItemProxy */ = {
+		274D0BEF175D5CFC00B99DB6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 273BB0C8175D4572005AC73E /* FishLampCore.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 27CBC1F416768BA600753D0A;
-			remoteInfo = "FishLampCore-OSX-3264-MRC";
+			remoteInfo = "FishLampCore-OSX-32-64-MRC";
 		};
-		27B361BB175D5024002A4A3E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 273BB0C9175D4572005AC73E /* FishLampCocoa.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 27A43AC315CDCCCB001CB13E;
-			remoteInfo = "FishLampCocoa-OSX-64-MRC";
-		};
-		27B361BD175D5024002A4A3E /* PBXContainerItemProxy */ = {
+		274D0BF8175D5CFC00B99DB6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 273BB0CA175D4572005AC73E /* FishLampCocoaUI.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 27A43AC315CDCCCB001CB13E;
+			proxyType = 2;
+			remoteGlobalIDString = 27A43AB415CDCC89001CB13E;
+			remoteInfo = "FishLampCocoaUI-iOS-ARC";
+		};
+		274D0BFA175D5CFC00B99DB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 273BB0CA175D4572005AC73E /* FishLampCocoaUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 27048EF0161CB58600C38ADA;
+			remoteInfo = "FishLampCocoaUI-OSX-32-MRC";
+		};
+		274D0BFC175D5CFC00B99DB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 273BB0CA175D4572005AC73E /* FishLampCocoaUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 27A43AC415CDCCCB001CB13E;
 			remoteInfo = "FishLampCocoaUI-OSX-64-MRC";
 		};
-		27B361BF175D5024002A4A3E /* PBXContainerItemProxy */ = {
+		274D0BFE175D5CFC00B99DB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 273BB0CA175D4572005AC73E /* FishLampCocoaUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 27314C79165328400027850D;
+			remoteInfo = "FishLampCocoaUI-OSX-64-ARC";
+		};
+		274D0C00175D5CFC00B99DB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 273BB0CA175D4572005AC73E /* FishLampCocoaUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 27CBC1F416768BA600753D0A;
+			remoteInfo = "FishLampCocoaUI-OSX-32-64-MRC";
+		};
+		274D0C0A175D5CFC00B99DB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 273BB0C9175D4572005AC73E /* FishLampCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 27A43AB415CDCC89001CB13E;
+			remoteInfo = "FishLampCocoa-iOS-ARC";
+		};
+		274D0C0C175D5CFC00B99DB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 273BB0C9175D4572005AC73E /* FishLampCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 27048EF0161CB58600C38ADA;
+			remoteInfo = "FishLampCocoa-OSX-32-MRC";
+		};
+		274D0C0E175D5CFC00B99DB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 273BB0C9175D4572005AC73E /* FishLampCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 27A43AC415CDCCCB001CB13E;
+			remoteInfo = "FishLampCocoa-OSX-64-MRC";
+		};
+		274D0C10175D5CFC00B99DB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 273BB0C9175D4572005AC73E /* FishLampCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 27314C79165328400027850D;
+			remoteInfo = "FishLampCocoa-OSX-64-ARC";
+		};
+		274D0C12175D5CFC00B99DB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 273BB0C9175D4572005AC73E /* FishLampCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 27CBC1F416768BA600753D0A;
+			remoteInfo = "FishLampCocoa-OSX-32-64-MRC";
+		};
+		274D0C14175D5CFC00B99DB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 273BB0C9175D4572005AC73E /* FishLampCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 27C62D39170B45C80093F260;
+			remoteInfo = "FishLampCocoaTestTool-64-MRC";
+		};
+		274D0C1C175D5CFD00B99DB6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 273BB0CB175D4572005AC73E /* FishLampOSX.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 27A43AC315CDCCCB001CB13E;
+			proxyType = 2;
+			remoteGlobalIDString = 27048EF0161CB58600C38ADA;
+			remoteInfo = "FishLampOSX-32-MRC";
+		};
+		274D0C1E175D5CFD00B99DB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 273BB0CB175D4572005AC73E /* FishLampOSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 27A43AC415CDCCCB001CB13E;
 			remoteInfo = "FishLampOSX-64-MRC";
 		};
-		27B361C1175D5024002A4A3E /* PBXContainerItemProxy */ = {
+		274D0C20175D5CFD00B99DB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 273BB0CB175D4572005AC73E /* FishLampOSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 27314C79165328400027850D;
+			remoteInfo = "FishLampOSX-64-ARC";
+		};
+		274D0C22175D5CFD00B99DB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 273BB0CB175D4572005AC73E /* FishLampOSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 27CBC1F416768BA600753D0A;
+			remoteInfo = "FishLampOSX-32-64-MRC";
+		};
+		274D0C24175D5D4400B99DB6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 273BB0C8175D4572005AC73E /* FishLampCore.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 27A43AC315CDCCCB001CB13E;
 			remoteInfo = "FishLampCore-OSX-64-MRC";
 		};
-		27B361D9175D502B002A4A3E /* PBXContainerItemProxy */ = {
+		274D0C26175D5D4400B99DB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 273BB0C9175D4572005AC73E /* FishLampCocoa.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 27A43AC315CDCCCB001CB13E;
+			remoteInfo = "FishLampCocoa-OSX-64-MRC";
+		};
+		274D0C28175D5D4400B99DB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 273BB0CB175D4572005AC73E /* FishLampOSX.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 27A43AC315CDCCCB001CB13E;
+			remoteInfo = "FishLampOSX-64-MRC";
+		};
+		274D0C2A175D5D4400B99DB6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2721A829175D47CA00D94132 /* FishLampCodeGenerator.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 279FFBEB175D4CCB003F06C4;
-			remoteInfo = FishLampCodeGenerator;
+			remoteInfo = "FishLampCodeGenerator-64-MRC";
+		};
+		274D0C2C175D5D4400B99DB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 273BB0CA175D4572005AC73E /* FishLampCocoaUI.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 27A43AC315CDCCCB001CB13E;
+			remoteInfo = "FishLampCocoaUI-OSX-64-MRC";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -261,7 +261,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2721A829175D47CA00D94132 /* FishLampCodeGenerator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FishLampCodeGenerator.xcodeproj; path = ../../../Frameworks/CodeGenerator/FishLampCodeGeneratorLib/FishLampCodeGenerator.xcodeproj; sourceTree = "<group>"; };
+		2721A829175D47CA00D94132 /* FishLampCodeGenerator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FishLampCodeGenerator.xcodeproj; path = ../../Frameworks/CodeGenerator/FishLampCodeGeneratorLib/FishLampCodeGenerator.xcodeproj; sourceTree = "<group>"; };
 		273121B01755043E00F4DC0B /* Whittle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Whittle; sourceTree = BUILT_PRODUCTS_DIR; };
 		273121B31755043E00F4DC0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		273121B61755043E00F4DC0B /* Whittle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Whittle-Prefix.pch"; sourceTree = "<group>"; };
@@ -283,10 +283,10 @@
 		273121DD175504C100F4DC0B /* FLXmlDocumentFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLXmlDocumentFormatter.h; sourceTree = "<group>"; };
 		273121DE175504C100F4DC0B /* FLXmlDocumentFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLXmlDocumentFormatter.m; sourceTree = "<group>"; };
 		273121DF175504C100F4DC0B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		273BB0C8175D4572005AC73E /* FishLampCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FishLampCore.xcodeproj; path = ../../../Frameworks/Core/FishLampCoreLib/FishLampCore.xcodeproj; sourceTree = "<group>"; };
-		273BB0C9175D4572005AC73E /* FishLampCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FishLampCocoa.xcodeproj; path = ../../../Frameworks/Cocoa/FishLampCocoaLib/FishLampCocoa.xcodeproj; sourceTree = "<group>"; };
-		273BB0CA175D4572005AC73E /* FishLampCocoaUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FishLampCocoaUI.xcodeproj; path = ../../../Frameworks/CocoaUI/FishLampCocoaUILib/FishLampCocoaUI.xcodeproj; sourceTree = "<group>"; };
-		273BB0CB175D4572005AC73E /* FishLampOSX.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FishLampOSX.xcodeproj; path = ../../../Frameworks/OSX/FishLampOSXLib/FishLampOSX.xcodeproj; sourceTree = "<group>"; };
+		273BB0C8175D4572005AC73E /* FishLampCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FishLampCore.xcodeproj; path = ../../Frameworks/Core/FishLampCoreLib/FishLampCore.xcodeproj; sourceTree = "<group>"; };
+		273BB0C9175D4572005AC73E /* FishLampCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FishLampCocoa.xcodeproj; path = ../../Frameworks/Cocoa/FishLampCocoaLib/FishLampCocoa.xcodeproj; sourceTree = "<group>"; };
+		273BB0CA175D4572005AC73E /* FishLampCocoaUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FishLampCocoaUI.xcodeproj; path = ../../Frameworks/CocoaUI/FishLampCocoaUILib/FishLampCocoaUI.xcodeproj; sourceTree = "<group>"; };
+		273BB0CB175D4572005AC73E /* FishLampOSX.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FishLampOSX.xcodeproj; path = ../../Frameworks/OSX/FishLampOSXLib/FishLampOSX.xcodeproj; sourceTree = "<group>"; };
 		274A4AD6161268AA0069944E /* PackMule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PackMule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		274A4ADA161268AA0069944E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		274A4ADC161268AA0069944E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -304,9 +304,9 @@
 		2787B6921741626D0010C2C6 /* PackMule-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PackMule-Prefix.pch"; sourceTree = "<group>"; };
 		2787B6931741626D0010C2C6 /* SharedTargetSettings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SharedTargetSettings.xcconfig; sourceTree = "<group>"; };
 		2787B694174162DE0010C2C6 /* PackMuleTargetSettings-64-MRC.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "PackMuleTargetSettings-64-MRC.xcconfig"; sourceTree = "<group>"; };
-		27B361F7175D5163002A4A3E /* attention.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = attention.png; path = ../../../../../Frameworks/OSX/Classes/ViewControllers/attention.png; sourceTree = "<group>"; };
-		27B361F8175D5163002A4A3E /* attention@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "attention@2x.png"; path = "../../../../../Frameworks/OSX/Classes/ViewControllers/attention@2x.png"; sourceTree = "<group>"; };
-		27B361F9175D5163002A4A3E /* FLErrorWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FLErrorWindowController.xib; path = ../../../../../Frameworks/OSX/Classes/ViewControllers/FLErrorWindowController.xib; sourceTree = "<group>"; };
+		279128D6175D5C8D00977957 /* attention.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = attention.png; sourceTree = "<group>"; };
+		279128D7175D5C8D00977957 /* attention@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "attention@2x.png"; sourceTree = "<group>"; };
+		279128D8175D5C8D00977957 /* FLErrorWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLErrorWindowController.xib; sourceTree = "<group>"; };
 		27B4D22B1755316E008540B8 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		27B4D22C1755316E008540B8 /* DefaultXmlFile.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DefaultXmlFile.xml; sourceTree = "<group>"; };
 		27B4D22E1755316E008540B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FLCodeGeneratorDocument.xib; sourceTree = "<group>"; };
@@ -340,11 +340,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				279128C4175D526400977957 /* libFishLampOSX-64-MRC.a in Frameworks */,
-				279128B3175D523E00977957 /* libFishLampCodeGenerator.a in Frameworks */,
-				27B361DB175D5064002A4A3E /* libFishLampCocoa-OSX-64-MRC.a in Frameworks */,
-				27B361DC175D5064002A4A3E /* libFishLampCocoaUI-OSX-64-MRC.a in Frameworks */,
-				27B361DD175D5064002A4A3E /* libFishLampCore-OSX-64-MRC.a in Frameworks */,
+				274D0C32175D5D6600B99DB6 /* libFishLampCodeGenerator.a in Frameworks */,
+				274D0C2E175D5D5B00B99DB6 /* libFishLampCocoa-OSX-64-MRC.a in Frameworks */,
+				274D0C2F175D5D5B00B99DB6 /* libFishLampCocoaUI-OSX-64-MRC.a in Frameworks */,
+				274D0C30175D5D5B00B99DB6 /* libFishLampCore-OSX-64-MRC.a in Frameworks */,
+				274D0C31175D5D5B00B99DB6 /* libFishLampOSX-64-MRC.a in Frameworks */,
 				27B4F088169A31C500D56DFA /* ImageIO.framework in Frameworks */,
 				27B4F086169A31B700D56DFA /* QuartzCore.framework in Frameworks */,
 				27B4F083169A318600D56DFA /* CFNetwork.framework in Frameworks */,
@@ -365,17 +365,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2721A7EC175D47BC00D94132 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2721A805175D47BC00D94132 /* libFishLampOSX-32-MRC.a */,
-				2721A807175D47BC00D94132 /* libFishLampOSX-64-MRC.a */,
-				2721A809175D47BC00D94132 /* libFishLampOSX-64-ARC.a */,
-				2721A80B175D47BC00D94132 /* libFishLampOSX-32-64-MRC.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		273121B21755043E00F4DC0B /* Whittle */ = {
 			isa = PBXGroup;
 			children = (
@@ -505,11 +494,59 @@
 			path = PackMule;
 			sourceTree = "<group>";
 		};
-		27681C60175D483800AC25CA /* Products */ = {
+		274D0BD8175D5CFC00B99DB6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				279128B2175D523E00977957 /* libFishLampCodeGenerator.a */,
-				27681C72175D483800AC25CA /* FishLampCodeGeneratorTester */,
+				274D0BDD175D5CFC00B99DB6 /* libFishLampCodeGenerator.a */,
+				274D0BDF175D5CFC00B99DB6 /* FishLampCodeGeneratorTester */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		274D0BE0175D5CFC00B99DB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				274D0BE8175D5CFC00B99DB6 /* libFishLampCore-iOS-ARC.a */,
+				274D0BEA175D5CFC00B99DB6 /* libFishLampCore-OSX-32-MRC.a */,
+				274D0BEC175D5CFC00B99DB6 /* libFishLampCore-OSX-64-MRC.a */,
+				274D0BEE175D5CFC00B99DB6 /* libFishLampCore-OSX-64-ARC.a */,
+				274D0BF0175D5CFC00B99DB6 /* libFishLampCore-OSX-32-64-MRC.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		274D0BF1175D5CFC00B99DB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				274D0BF9175D5CFC00B99DB6 /* libFishLampCocoaUI-iOS-ARC.a */,
+				274D0BFB175D5CFC00B99DB6 /* libFishLampCocoaUI-OSX-32-MRC.a */,
+				274D0BFD175D5CFC00B99DB6 /* libFishLampCocoaUI-OSX-64-MRC.a */,
+				274D0BFF175D5CFC00B99DB6 /* libFishLampCocoaUI-OSX-64-ARC.a */,
+				274D0C01175D5CFC00B99DB6 /* libFishLampCocoaUI-OSX-3264-MRC.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		274D0C02175D5CFC00B99DB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				274D0C0B175D5CFC00B99DB6 /* libFishLampCocoa-iOS-ARC.a */,
+				274D0C0D175D5CFC00B99DB6 /* libFishLampCocoa-OSX-32-MRC.a */,
+				274D0C0F175D5CFC00B99DB6 /* libFishLampCocoa-OSX-64-MRC.a */,
+				274D0C11175D5CFC00B99DB6 /* libFishLampCocoa-OSX-64-ARC.a */,
+				274D0C13175D5CFC00B99DB6 /* libFishLampCocoa-OSX-3264-MRC.a */,
+				274D0C15175D5CFC00B99DB6 /* FishLampCocoaTestTool-64-MRC */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		274D0C16175D5CFD00B99DB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				274D0C1D175D5CFD00B99DB6 /* libFishLampOSX-32-MRC.a */,
+				274D0C1F175D5CFD00B99DB6 /* libFishLampOSX-64-MRC.a */,
+				274D0C21175D5CFD00B99DB6 /* libFishLampOSX-64-ARC.a */,
+				274D0C23175D5CFD00B99DB6 /* libFishLampOSX-32-64-MRC.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -524,49 +561,12 @@
 			path = FishLampXcodeConfigs/FishLampProjectSettings;
 			sourceTree = SOURCE_ROOT;
 		};
-		2797C604175D462100FBD667 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2797C60C175D462100FBD667 /* libFishLampCocoaUI-iOS-ARC.a */,
-				2797C60E175D462100FBD667 /* libFishLampCocoaUI-OSX-32-MRC.a */,
-				2797C610175D462100FBD667 /* libFishLampCocoaUI-OSX-64-MRC.a */,
-				2797C612175D462100FBD667 /* libFishLampCocoaUI-OSX-64-ARC.a */,
-				2797C614175D462100FBD667 /* libFishLampCocoaUI-OSX-3264-MRC.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		2797C615175D462100FBD667 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2797C61E175D462200FBD667 /* libFishLampCocoa-iOS-ARC.a */,
-				2797C620175D462200FBD667 /* libFishLampCocoa-OSX-32-MRC.a */,
-				2797C622175D462200FBD667 /* libFishLampCocoa-OSX-64-MRC.a */,
-				2797C624175D462200FBD667 /* libFishLampCocoa-OSX-64-ARC.a */,
-				2797C626175D462200FBD667 /* libFishLampCocoa-OSX-3264-MRC.a */,
-				2797C628175D462200FBD667 /* FishLampCocoaTestTool-64-MRC */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		2797C629175D462200FBD667 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2797C631175D462200FBD667 /* libFishLampCore-iOS-ARC.a */,
-				2797C633175D462200FBD667 /* libFishLampCore-OSX-32-MRC.a */,
-				2797C635175D462200FBD667 /* libFishLampCore-OSX-64-MRC.a */,
-				2797C637175D462200FBD667 /* libFishLampCore-OSX-64-ARC.a */,
-				2797C639175D462200FBD667 /* libFishLampCore-OSX-32-64-MRC.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		27B4D22A1755316E008540B8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				27B361F7175D5163002A4A3E /* attention.png */,
-				27B361F8175D5163002A4A3E /* attention@2x.png */,
-				27B361F9175D5163002A4A3E /* FLErrorWindowController.xib */,
+				279128D6175D5C8D00977957 /* attention.png */,
+				279128D7175D5C8D00977957 /* attention@2x.png */,
+				279128D8175D5C8D00977957 /* FLErrorWindowController.xib */,
 				27B4D22B1755316E008540B8 /* Credits.rtf */,
 				27B4D22C1755316E008540B8 /* DefaultXmlFile.xml */,
 				27B4D22D1755316E008540B8 /* FLCodeGeneratorDocument.xib */,
@@ -613,11 +613,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				27B361DA175D502B002A4A3E /* PBXTargetDependency */,
-				27B361BC175D5024002A4A3E /* PBXTargetDependency */,
-				27B361BE175D5024002A4A3E /* PBXTargetDependency */,
-				27B361C0175D5024002A4A3E /* PBXTargetDependency */,
-				27B361C2175D5024002A4A3E /* PBXTargetDependency */,
+				274D0C25175D5D4400B99DB6 /* PBXTargetDependency */,
+				274D0C27175D5D4400B99DB6 /* PBXTargetDependency */,
+				274D0C29175D5D4400B99DB6 /* PBXTargetDependency */,
+				274D0C2B175D5D4400B99DB6 /* PBXTargetDependency */,
+				274D0C2D175D5D4400B99DB6 /* PBXTargetDependency */,
 			);
 			name = PackMule;
 			productName = PackMule;
@@ -646,23 +646,23 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 2797C615175D462100FBD667 /* Products */;
+					ProductGroup = 274D0C02175D5CFC00B99DB6 /* Products */;
 					ProjectRef = 273BB0C9175D4572005AC73E /* FishLampCocoa.xcodeproj */;
 				},
 				{
-					ProductGroup = 2797C604175D462100FBD667 /* Products */;
+					ProductGroup = 274D0BF1175D5CFC00B99DB6 /* Products */;
 					ProjectRef = 273BB0CA175D4572005AC73E /* FishLampCocoaUI.xcodeproj */;
 				},
 				{
-					ProductGroup = 27681C60175D483800AC25CA /* Products */;
+					ProductGroup = 274D0BD8175D5CFC00B99DB6 /* Products */;
 					ProjectRef = 2721A829175D47CA00D94132 /* FishLampCodeGenerator.xcodeproj */;
 				},
 				{
-					ProductGroup = 2797C629175D462200FBD667 /* Products */;
+					ProductGroup = 274D0BE0175D5CFC00B99DB6 /* Products */;
 					ProjectRef = 273BB0C8175D4572005AC73E /* FishLampCore.xcodeproj */;
 				},
 				{
-					ProductGroup = 2721A7EC175D47BC00D94132 /* Products */;
+					ProductGroup = 274D0C16175D5CFD00B99DB6 /* Products */;
 					ProjectRef = 273BB0CB175D4572005AC73E /* FishLampOSX.xcodeproj */;
 				},
 			);
@@ -675,161 +675,161 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		2721A805175D47BC00D94132 /* libFishLampOSX-32-MRC.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libFishLampOSX-32-MRC.a";
-			remoteRef = 2721A804175D47BC00D94132 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2721A807175D47BC00D94132 /* libFishLampOSX-64-MRC.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libFishLampOSX-64-MRC.a";
-			remoteRef = 2721A806175D47BC00D94132 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2721A809175D47BC00D94132 /* libFishLampOSX-64-ARC.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libFishLampOSX-64-ARC.a";
-			remoteRef = 2721A808175D47BC00D94132 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2721A80B175D47BC00D94132 /* libFishLampOSX-32-64-MRC.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libFishLampOSX-32-64-MRC.a";
-			remoteRef = 2721A80A175D47BC00D94132 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		27681C72175D483800AC25CA /* FishLampCodeGeneratorTester */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = FishLampCodeGeneratorTester;
-			remoteRef = 27681C71175D483800AC25CA /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		279128B2175D523E00977957 /* libFishLampCodeGenerator.a */ = {
+		274D0BDD175D5CFC00B99DB6 /* libFishLampCodeGenerator.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			name = libFishLampCodeGenerator.a;
 			path = "libFishLampCodeGenerator-64-MRC.a";
-			remoteRef = 279128B1175D523E00977957 /* PBXContainerItemProxy */;
+			remoteRef = 274D0BDC175D5CFC00B99DB6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2797C60C175D462100FBD667 /* libFishLampCocoaUI-iOS-ARC.a */ = {
+		274D0BDF175D5CFC00B99DB6 /* FishLampCodeGeneratorTester */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = FishLampCodeGeneratorTester;
+			remoteRef = 274D0BDE175D5CFC00B99DB6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		274D0BE8175D5CFC00B99DB6 /* libFishLampCore-iOS-ARC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFishLampCore-iOS-ARC.a";
+			remoteRef = 274D0BE7175D5CFC00B99DB6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		274D0BEA175D5CFC00B99DB6 /* libFishLampCore-OSX-32-MRC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFishLampCore-OSX-32-MRC.a";
+			remoteRef = 274D0BE9175D5CFC00B99DB6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		274D0BEC175D5CFC00B99DB6 /* libFishLampCore-OSX-64-MRC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFishLampCore-OSX-64-MRC.a";
+			remoteRef = 274D0BEB175D5CFC00B99DB6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		274D0BEE175D5CFC00B99DB6 /* libFishLampCore-OSX-64-ARC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFishLampCore-OSX-64-ARC.a";
+			remoteRef = 274D0BED175D5CFC00B99DB6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		274D0BF0175D5CFC00B99DB6 /* libFishLampCore-OSX-32-64-MRC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFishLampCore-OSX-32-64-MRC.a";
+			remoteRef = 274D0BEF175D5CFC00B99DB6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		274D0BF9175D5CFC00B99DB6 /* libFishLampCocoaUI-iOS-ARC.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libFishLampCocoaUI-iOS-ARC.a";
-			remoteRef = 2797C60B175D462100FBD667 /* PBXContainerItemProxy */;
+			remoteRef = 274D0BF8175D5CFC00B99DB6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2797C60E175D462100FBD667 /* libFishLampCocoaUI-OSX-32-MRC.a */ = {
+		274D0BFB175D5CFC00B99DB6 /* libFishLampCocoaUI-OSX-32-MRC.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libFishLampCocoaUI-OSX-32-MRC.a";
-			remoteRef = 2797C60D175D462100FBD667 /* PBXContainerItemProxy */;
+			remoteRef = 274D0BFA175D5CFC00B99DB6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2797C610175D462100FBD667 /* libFishLampCocoaUI-OSX-64-MRC.a */ = {
+		274D0BFD175D5CFC00B99DB6 /* libFishLampCocoaUI-OSX-64-MRC.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libFishLampCocoaUI-OSX-64-MRC.a";
-			remoteRef = 2797C60F175D462100FBD667 /* PBXContainerItemProxy */;
+			remoteRef = 274D0BFC175D5CFC00B99DB6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2797C612175D462100FBD667 /* libFishLampCocoaUI-OSX-64-ARC.a */ = {
+		274D0BFF175D5CFC00B99DB6 /* libFishLampCocoaUI-OSX-64-ARC.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libFishLampCocoaUI-OSX-64-ARC.a";
-			remoteRef = 2797C611175D462100FBD667 /* PBXContainerItemProxy */;
+			remoteRef = 274D0BFE175D5CFC00B99DB6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2797C614175D462100FBD667 /* libFishLampCocoaUI-OSX-3264-MRC.a */ = {
+		274D0C01175D5CFC00B99DB6 /* libFishLampCocoaUI-OSX-3264-MRC.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			name = "libFishLampCocoaUI-OSX-3264-MRC.a";
 			path = "libFishLampCocoaUI-OSX-32-64-MRC.a";
-			remoteRef = 2797C613175D462100FBD667 /* PBXContainerItemProxy */;
+			remoteRef = 274D0C00175D5CFC00B99DB6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2797C61E175D462200FBD667 /* libFishLampCocoa-iOS-ARC.a */ = {
+		274D0C0B175D5CFC00B99DB6 /* libFishLampCocoa-iOS-ARC.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libFishLampCocoa-iOS-ARC.a";
-			remoteRef = 2797C61D175D462200FBD667 /* PBXContainerItemProxy */;
+			remoteRef = 274D0C0A175D5CFC00B99DB6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2797C620175D462200FBD667 /* libFishLampCocoa-OSX-32-MRC.a */ = {
+		274D0C0D175D5CFC00B99DB6 /* libFishLampCocoa-OSX-32-MRC.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libFishLampCocoa-OSX-32-MRC.a";
-			remoteRef = 2797C61F175D462200FBD667 /* PBXContainerItemProxy */;
+			remoteRef = 274D0C0C175D5CFC00B99DB6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2797C622175D462200FBD667 /* libFishLampCocoa-OSX-64-MRC.a */ = {
+		274D0C0F175D5CFC00B99DB6 /* libFishLampCocoa-OSX-64-MRC.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libFishLampCocoa-OSX-64-MRC.a";
-			remoteRef = 2797C621175D462200FBD667 /* PBXContainerItemProxy */;
+			remoteRef = 274D0C0E175D5CFC00B99DB6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2797C624175D462200FBD667 /* libFishLampCocoa-OSX-64-ARC.a */ = {
+		274D0C11175D5CFC00B99DB6 /* libFishLampCocoa-OSX-64-ARC.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libFishLampCocoa-OSX-64-ARC.a";
-			remoteRef = 2797C623175D462200FBD667 /* PBXContainerItemProxy */;
+			remoteRef = 274D0C10175D5CFC00B99DB6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2797C626175D462200FBD667 /* libFishLampCocoa-OSX-3264-MRC.a */ = {
+		274D0C13175D5CFC00B99DB6 /* libFishLampCocoa-OSX-3264-MRC.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			name = "libFishLampCocoa-OSX-3264-MRC.a";
 			path = "libFishLampCocoa-OSX-32-64-MRC.a";
-			remoteRef = 2797C625175D462200FBD667 /* PBXContainerItemProxy */;
+			remoteRef = 274D0C12175D5CFC00B99DB6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2797C628175D462200FBD667 /* FishLampCocoaTestTool-64-MRC */ = {
+		274D0C15175D5CFC00B99DB6 /* FishLampCocoaTestTool-64-MRC */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
 			path = "FishLampCocoaTestTool-64-MRC";
-			remoteRef = 2797C627175D462200FBD667 /* PBXContainerItemProxy */;
+			remoteRef = 274D0C14175D5CFC00B99DB6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2797C631175D462200FBD667 /* libFishLampCore-iOS-ARC.a */ = {
+		274D0C1D175D5CFD00B99DB6 /* libFishLampOSX-32-MRC.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = "libFishLampCore-iOS-ARC.a";
-			remoteRef = 2797C630175D462200FBD667 /* PBXContainerItemProxy */;
+			path = "libFishLampOSX-32-MRC.a";
+			remoteRef = 274D0C1C175D5CFD00B99DB6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2797C633175D462200FBD667 /* libFishLampCore-OSX-32-MRC.a */ = {
+		274D0C1F175D5CFD00B99DB6 /* libFishLampOSX-64-MRC.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = "libFishLampCore-OSX-32-MRC.a";
-			remoteRef = 2797C632175D462200FBD667 /* PBXContainerItemProxy */;
+			path = "libFishLampOSX-64-MRC.a";
+			remoteRef = 274D0C1E175D5CFD00B99DB6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2797C635175D462200FBD667 /* libFishLampCore-OSX-64-MRC.a */ = {
+		274D0C21175D5CFD00B99DB6 /* libFishLampOSX-64-ARC.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = "libFishLampCore-OSX-64-MRC.a";
-			remoteRef = 2797C634175D462200FBD667 /* PBXContainerItemProxy */;
+			path = "libFishLampOSX-64-ARC.a";
+			remoteRef = 274D0C20175D5CFD00B99DB6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2797C637175D462200FBD667 /* libFishLampCore-OSX-64-ARC.a */ = {
+		274D0C23175D5CFD00B99DB6 /* libFishLampOSX-32-64-MRC.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = "libFishLampCore-OSX-64-ARC.a";
-			remoteRef = 2797C636175D462200FBD667 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2797C639175D462200FBD667 /* libFishLampCore-OSX-32-64-MRC.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libFishLampCore-OSX-32-64-MRC.a";
-			remoteRef = 2797C638175D462200FBD667 /* PBXContainerItemProxy */;
+			path = "libFishLampOSX-32-64-MRC.a";
+			remoteRef = 274D0C22175D5CFD00B99DB6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -852,9 +852,9 @@
 				27B4D2411755316E008540B8 /* mule.icns in Resources */,
 				27B4D2421755316E008540B8 /* muledoc.icns in Resources */,
 				27B4D2431755316E008540B8 /* pmdoc.png in Resources */,
-				27B361FA175D5163002A4A3E /* attention.png in Resources */,
-				27B361FB175D5163002A4A3E /* attention@2x.png in Resources */,
-				27B361FC175D5163002A4A3E /* FLErrorWindowController.xib in Resources */,
+				279128D9175D5C8D00977957 /* attention.png in Resources */,
+				279128DA175D5C8D00977957 /* attention@2x.png in Resources */,
+				279128DB175D5C8D00977957 /* FLErrorWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -887,30 +887,30 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		27B361BC175D5024002A4A3E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "FishLampCocoa-OSX-64-MRC";
-			targetProxy = 27B361BB175D5024002A4A3E /* PBXContainerItemProxy */;
-		};
-		27B361BE175D5024002A4A3E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "FishLampCocoaUI-OSX-64-MRC";
-			targetProxy = 27B361BD175D5024002A4A3E /* PBXContainerItemProxy */;
-		};
-		27B361C0175D5024002A4A3E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "FishLampOSX-64-MRC";
-			targetProxy = 27B361BF175D5024002A4A3E /* PBXContainerItemProxy */;
-		};
-		27B361C2175D5024002A4A3E /* PBXTargetDependency */ = {
+		274D0C25175D5D4400B99DB6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "FishLampCore-OSX-64-MRC";
-			targetProxy = 27B361C1175D5024002A4A3E /* PBXContainerItemProxy */;
+			targetProxy = 274D0C24175D5D4400B99DB6 /* PBXContainerItemProxy */;
 		};
-		27B361DA175D502B002A4A3E /* PBXTargetDependency */ = {
+		274D0C27175D5D4400B99DB6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = FishLampCodeGenerator;
-			targetProxy = 27B361D9175D502B002A4A3E /* PBXContainerItemProxy */;
+			name = "FishLampCocoa-OSX-64-MRC";
+			targetProxy = 274D0C26175D5D4400B99DB6 /* PBXContainerItemProxy */;
+		};
+		274D0C29175D5D4400B99DB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FishLampOSX-64-MRC";
+			targetProxy = 274D0C28175D5D4400B99DB6 /* PBXContainerItemProxy */;
+		};
+		274D0C2B175D5D4400B99DB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FishLampCodeGenerator-64-MRC";
+			targetProxy = 274D0C2A175D5D4400B99DB6 /* PBXContainerItemProxy */;
+		};
+		274D0C2D175D5D4400B99DB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FishLampCocoaUI-OSX-64-MRC";
+			targetProxy = 274D0C2C175D5D4400B99DB6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
