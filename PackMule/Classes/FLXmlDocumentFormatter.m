@@ -26,7 +26,7 @@
 // weird code alert	
     
     NSError* err = nil;
-	NSXMLDocument* document = [[NSXMLDocument alloc] initWithXMLString:string options:XMLOPTIONS error:&err];
+	NSXMLDocument* document = FLAutorelease([[NSXMLDocument alloc] initWithXMLString:string options:XMLOPTIONS error:&err]);
 	FLThrowIfError(FLAutorelease(err));
         
     return document;
@@ -50,7 +50,7 @@
 - (NSString*) prettyPrintString:(NSString*) string {
 
 	NSError* error = nil;
-	NSXMLDocument* document = [[NSXMLDocument alloc] initWithXMLString:string options:XMLOPTIONS error:&error];
+	NSXMLDocument* document = FLAutorelease([[NSXMLDocument alloc] initWithXMLString:string options:XMLOPTIONS error:&error]);
 	FLThrowIfError(error);
 
 

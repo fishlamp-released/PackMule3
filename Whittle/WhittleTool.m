@@ -7,6 +7,7 @@
 //
 
 #import "WhittleTool.h"
+#if REFACTOR
 #import "WLProject.h"
 #import "FLXmlParser.h"
 #import "FLInputHandler.h"
@@ -20,8 +21,41 @@
 - (void) _generateFromFile:(NSString*) path ignoreWrongType:(BOOL) ignoreWrongType;
 - (void) _generateInDirectory:(NSString*) fromPath recursive:(BOOL) recursive;
 @end
+#endif
 
 @implementation WhittleTool
+
+- (NSString*) toolName {
+    return @"whittle";
+}
+- (NSString*) toolIdentifier {
+    return @"com.fishlamp.whittle";
+}
+- (NSString*) toolVersion {
+    return FishLampVersion;
+}
+
+- (void) willRunTool:(FLCommandLineTask*) task {
+}
+- (void) runTool:(FLCommandLineTask*) task {
+}
+
+- (void) didRunTool {
+}
+
+- (id) init {
+	self = [super initWithToolImplementation:self];
+	if(self) {
+		
+	}
+	return self;
+}
+
++ (id) whittleTool {
+    return FLAutorelease([[[self class] alloc] init]);
+}
+
+#if REFACTOR
 
 @synthesize filePath = _filePath;
 
@@ -322,5 +356,6 @@
     }
 }
 
+#endif
 
 @end

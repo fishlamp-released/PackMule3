@@ -6,10 +6,11 @@
 //  Copyright (c) 2012 GreenTongue Software. All rights reserved.
 //
 
-#import "FLCommanderApp.h"
+#import "FLCommandLineTool.h"
 
-@interface WhittleTool : FLCommanderApp {
+@interface WhittleTool : FLCommandLineTool<FLCommandLineToolImplementation> {
 @private
+#if REFACTOR
     BOOL _recursive;
     BOOL _output;
     BOOL _continue;
@@ -18,6 +19,9 @@
     
     NSString* _optionalPath;
     NSString* _filePath;
+#endif    
 }
+
++ (id) whittleTool;
 
 @end

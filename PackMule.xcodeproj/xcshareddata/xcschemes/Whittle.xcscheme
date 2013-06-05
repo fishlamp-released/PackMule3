@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "273121AF1755043E00F4DC0B"
-               BuildableName = "Whittle"
+               BuildableName = "whittle"
                BlueprintName = "Whittle"
                ReferencedContainer = "container:PackMule.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "273121AF1755043E00F4DC0B"
-            BuildableName = "Whittle"
+            BuildableName = "whittle"
             BlueprintName = "Whittle"
             ReferencedContainer = "container:PackMule.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "273121AF1755043E00F4DC0B"
-            BuildableName = "Whittle"
+            BuildableName = "whittle"
             BlueprintName = "Whittle"
             ReferencedContainer = "container:PackMule.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "273121AF1755043E00F4DC0B"
-            BuildableName = "Whittle"
+            BuildableName = "whittle"
             BlueprintName = "Whittle"
             ReferencedContainer = "container:PackMule.xcodeproj">
          </BuildableReference>

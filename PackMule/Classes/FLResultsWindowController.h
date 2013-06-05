@@ -16,8 +16,6 @@
     
     NSString* _labelString;
     NSString* _resultString;
-
-    NSModalSession _modalSession;
 }
 
 + (id) resultWindowController:(NSString*) label results:(NSString*) result;
