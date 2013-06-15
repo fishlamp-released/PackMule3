@@ -14,6 +14,7 @@
 #import "FLXmlCodeProjectReader.h"
 #import "FLWsdlCodeProjectReader.h"
 #import "FLErrorWindowController.h"
+#import "FLCodeProjectLocation.h"
 
 @implementation FLCodeGeneratorDocument
 
