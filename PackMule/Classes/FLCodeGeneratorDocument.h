@@ -7,9 +7,26 @@
 //
 
 
-#import "FLAbstractCodeDocument.h"
+#import "FishLamp.h"
+@class FLCodeViewController;
+@class FLResultsViewController;
 
-@interface FLCodeGeneratorDocument : FLAbstractCodeDocument {
+@interface FLCodeGeneratorDocument : NSDocument {
+@private
+    IBOutlet FLResultsViewController* _resultsViewController;
+    IBOutlet FLCodeViewController* _codeViewController;
+    NSString* _stringLoadedFromFile;
 }
+
+- (NSWindowController*) windowController;
+
+- (void) displayResult:(NSString*) title results:(NSString*) result;
+
+- (void) generateNow;
+- (void) setDefaultCode;
+
+- (IBAction) revealInFinder:(id) sender;
+- (IBAction) generateCode:(id) sender;
+- (IBAction) prettyPrintText:(id) sender;
 
 @end

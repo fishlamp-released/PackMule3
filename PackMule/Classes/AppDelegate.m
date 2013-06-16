@@ -30,6 +30,9 @@ static AppDelegate* s_instance;
 	return self;
 }
 
+- (void)applicationDidFinishLaunching:(NSNotification *)notification {
+}
+
 - (void) generateWithFiles:(NSArray*) files {
 	
     @try {

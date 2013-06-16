@@ -6,12 +6,9 @@
 //	Copyright 2009 Greentongue Software. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import "FLCodeGeneratorDocument.h"
 
-//#import "FLCodeGeneratorWsdlFileReader.h"
-#import "FLAbstractCodeDocument.h"
-
-@interface FLWsdlDocument : FLAbstractCodeDocument {
+@interface FLWsdlDocument : FLCodeGeneratorDocument {
 	NSString* m_url;
 }
 

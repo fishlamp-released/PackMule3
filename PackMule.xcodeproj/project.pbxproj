@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270C820A176E3C62005E179D /* FLTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270C8209176E3C62005E179D /* FLTextViewController.m */; };
+		270C8213176E3F36005E179D /* FLResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270C8212176E3F36005E179D /* FLResultsViewController.m */; };
 		273121B11755043E00F4DC0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274A4ADE161268AA0069944E /* Foundation.framework */; };
 		273121B41755043E00F4DC0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 273121B31755043E00F4DC0B /* main.m */; };
 		273121B81755043E00F4DC0B /* Whittle.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 273121B71755043E00F4DC0B /* Whittle.1 */; };
 		273121E3175504C100F4DC0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 273121D0175504C100F4DC0B /* AppDelegate.m */; };
-		273121E4175504C100F4DC0B /* FLAbstractCodeDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 273121D2175504C100F4DC0B /* FLAbstractCodeDocument.m */; };
 		273121E5175504C100F4DC0B /* FLCodeGeneratorDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 273121D4175504C100F4DC0B /* FLCodeGeneratorDocument.m */; };
 		273121E6175504C100F4DC0B /* FLInputWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 273121D6175504C100F4DC0B /* FLInputWindowController.m */; };
 		273121E7175504C100F4DC0B /* FLInputWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 273121D7175504C100F4DC0B /* FLInputWindowController.xib */; };
@@ -32,6 +33,7 @@
 		279128D9175D5C8D00977957 /* attention.png in Resources */ = {isa = PBXBuildFile; fileRef = 279128D6175D5C8D00977957 /* attention.png */; };
 		279128DA175D5C8D00977957 /* attention@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 279128D7175D5C8D00977957 /* attention@2x.png */; };
 		279128DB175D5C8D00977957 /* FLErrorWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 279128D8175D5C8D00977957 /* FLErrorWindowController.xib */; };
+		279FE7C2176E2BCB0047B077 /* FLCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 279FE7C1176E2BCB0047B077 /* FLCodeViewController.m */; };
 		27B4D2391755316E008540B8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 27B4D22B1755316E008540B8 /* Credits.rtf */; };
 		27B4D23A1755316E008540B8 /* DefaultXmlFile.xml in Resources */ = {isa = PBXBuildFile; fileRef = 27B4D22C1755316E008540B8 /* DefaultXmlFile.xml */; };
 		27B4D23B1755316E008540B8 /* FLCodeGeneratorDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27B4D22D1755316E008540B8 /* FLCodeGeneratorDocument.xib */; };
@@ -157,6 +159,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		270C8208176E3C62005E179D /* FLTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTextViewController.h; sourceTree = "<group>"; };
+		270C8209176E3C62005E179D /* FLTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTextViewController.m; sourceTree = "<group>"; };
+		270C8211176E3F36005E179D /* FLResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLResultsViewController.h; sourceTree = "<group>"; };
+		270C8212176E3F36005E179D /* FLResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLResultsViewController.m; sourceTree = "<group>"; };
 		2721A829175D47CA00D94132 /* FishLampCodeGenerator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FishLampCodeGenerator.xcodeproj; path = ../../Frameworks/CodeGenerator/FishLampCodeGeneratorLib/FishLampCodeGenerator.xcodeproj; sourceTree = "<group>"; };
 		273121B01755043E00F4DC0B /* whittle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = whittle; sourceTree = BUILT_PRODUCTS_DIR; };
 		273121B31755043E00F4DC0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -164,8 +170,6 @@
 		273121B71755043E00F4DC0B /* Whittle.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Whittle.1; sourceTree = "<group>"; };
 		273121CF175504C100F4DC0B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		273121D0175504C100F4DC0B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		273121D1175504C100F4DC0B /* FLAbstractCodeDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAbstractCodeDocument.h; sourceTree = "<group>"; };
-		273121D2175504C100F4DC0B /* FLAbstractCodeDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAbstractCodeDocument.m; sourceTree = "<group>"; };
 		273121D3175504C100F4DC0B /* FLCodeGeneratorDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLCodeGeneratorDocument.h; sourceTree = "<group>"; };
 		273121D4175504C100F4DC0B /* FLCodeGeneratorDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLCodeGeneratorDocument.m; sourceTree = "<group>"; };
 		273121D5175504C100F4DC0B /* FLInputWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLInputWindowController.h; sourceTree = "<group>"; };
@@ -199,6 +203,8 @@
 		279128D6175D5C8D00977957 /* attention.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = attention.png; sourceTree = "<group>"; };
 		279128D7175D5C8D00977957 /* attention@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "attention@2x.png"; sourceTree = "<group>"; };
 		279128D8175D5C8D00977957 /* FLErrorWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLErrorWindowController.xib; sourceTree = "<group>"; };
+		279FE7C0176E2BCB0047B077 /* FLCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLCodeViewController.h; sourceTree = "<group>"; };
+		279FE7C1176E2BCB0047B077 /* FLCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLCodeViewController.m; sourceTree = "<group>"; };
 		27B4D22B1755316E008540B8 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		27B4D22C1755316E008540B8 /* DefaultXmlFile.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DefaultXmlFile.xml; sourceTree = "<group>"; };
 		27B4D22E1755316E008540B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FLCodeGeneratorDocument.xib; sourceTree = "<group>"; };
@@ -311,23 +317,11 @@
 		273121CE175504C100F4DC0B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				273121CF175504C100F4DC0B /* AppDelegate.h */,
-				273121D0175504C100F4DC0B /* AppDelegate.m */,
-				273121D1175504C100F4DC0B /* FLAbstractCodeDocument.h */,
-				273121D2175504C100F4DC0B /* FLAbstractCodeDocument.m */,
-				273121D3175504C100F4DC0B /* FLCodeGeneratorDocument.h */,
-				273121D4175504C100F4DC0B /* FLCodeGeneratorDocument.m */,
-				273121D5175504C100F4DC0B /* FLInputWindowController.h */,
-				273121D6175504C100F4DC0B /* FLInputWindowController.m */,
-				273121D7175504C100F4DC0B /* FLInputWindowController.xib */,
-				273121D8175504C100F4DC0B /* FLResultsWindowController.h */,
-				273121D9175504C100F4DC0B /* FLResultsWindowController.m */,
-				273121DA175504C100F4DC0B /* FLResultsWindowController.xib */,
-				273121DB175504C100F4DC0B /* FLWsdlDocument.h */,
-				273121DC175504C100F4DC0B /* FLWsdlDocument.m */,
-				273121DD175504C100F4DC0B /* FLXmlDocumentFormatter.h */,
-				273121DE175504C100F4DC0B /* FLXmlDocumentFormatter.m */,
-				273121DF175504C100F4DC0B /* main.m */,
+				279FE7BF176E2BAF0047B077 /* Controllers */,
+				279FE773176E1CB90047B077 /* Utils */,
+				279FE772176E1CA00047B077 /* Windows */,
+				279FE771176E1C800047B077 /* App */,
+				279FE770176E1C690047B077 /* Documents */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -425,6 +419,65 @@
 			path = FishLampXcodeConfigs/FishLampProjectSettings;
 			sourceTree = SOURCE_ROOT;
 		};
+		279FE770176E1C690047B077 /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				273121D3175504C100F4DC0B /* FLCodeGeneratorDocument.h */,
+				273121D4175504C100F4DC0B /* FLCodeGeneratorDocument.m */,
+				27B4D22D1755316E008540B8 /* FLCodeGeneratorDocument.xib */,
+				273121DB175504C100F4DC0B /* FLWsdlDocument.h */,
+				273121DC175504C100F4DC0B /* FLWsdlDocument.m */,
+				27B4D22F1755316E008540B8 /* FLWsdlDocument.xib */,
+			);
+			name = Documents;
+			sourceTree = "<group>";
+		};
+		279FE771176E1C800047B077 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				27B4D2311755316E008540B8 /* MainMenu.xib */,
+				273121DF175504C100F4DC0B /* main.m */,
+				273121CF175504C100F4DC0B /* AppDelegate.h */,
+				273121D0175504C100F4DC0B /* AppDelegate.m */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		279FE772176E1CA00047B077 /* Windows */ = {
+			isa = PBXGroup;
+			children = (
+				273121D5175504C100F4DC0B /* FLInputWindowController.h */,
+				273121D6175504C100F4DC0B /* FLInputWindowController.m */,
+				273121D7175504C100F4DC0B /* FLInputWindowController.xib */,
+				273121D8175504C100F4DC0B /* FLResultsWindowController.h */,
+				273121D9175504C100F4DC0B /* FLResultsWindowController.m */,
+				273121DA175504C100F4DC0B /* FLResultsWindowController.xib */,
+			);
+			name = Windows;
+			sourceTree = "<group>";
+		};
+		279FE773176E1CB90047B077 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				273121DD175504C100F4DC0B /* FLXmlDocumentFormatter.h */,
+				273121DE175504C100F4DC0B /* FLXmlDocumentFormatter.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		279FE7BF176E2BAF0047B077 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				279FE7C0176E2BCB0047B077 /* FLCodeViewController.h */,
+				279FE7C1176E2BCB0047B077 /* FLCodeViewController.m */,
+				270C8208176E3C62005E179D /* FLTextViewController.h */,
+				270C8209176E3C62005E179D /* FLTextViewController.m */,
+				270C8211176E3F36005E179D /* FLResultsViewController.h */,
+				270C8212176E3F36005E179D /* FLResultsViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		27B4D22A1755316E008540B8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -433,9 +486,6 @@
 				279128D8175D5C8D00977957 /* FLErrorWindowController.xib */,
 				27B4D22B1755316E008540B8 /* Credits.rtf */,
 				27B4D22C1755316E008540B8 /* DefaultXmlFile.xml */,
-				27B4D22D1755316E008540B8 /* FLCodeGeneratorDocument.xib */,
-				27B4D22F1755316E008540B8 /* FLWsdlDocument.xib */,
-				27B4D2311755316E008540B8 /* MainMenu.xib */,
 				27B4D2331755316E008540B8 /* folder.png */,
 				27B4D2341755316E008540B8 /* folder@2x.png */,
 				27B4D2351755316E008540B8 /* InfoPlist.strings */,
@@ -622,11 +672,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				273121E3175504C100F4DC0B /* AppDelegate.m in Sources */,
-				273121E4175504C100F4DC0B /* FLAbstractCodeDocument.m in Sources */,
 				273121E5175504C100F4DC0B /* FLCodeGeneratorDocument.m in Sources */,
 				273121E6175504C100F4DC0B /* FLInputWindowController.m in Sources */,
 				273121E8175504C100F4DC0B /* FLResultsWindowController.m in Sources */,
+				270C820A176E3C62005E179D /* FLTextViewController.m in Sources */,
+				270C8213176E3F36005E179D /* FLResultsViewController.m in Sources */,
 				273121EA175504C100F4DC0B /* FLWsdlDocument.m in Sources */,
+				279FE7C2176E2BCB0047B077 /* FLCodeViewController.m in Sources */,
 				273121EB175504C100F4DC0B /* FLXmlDocumentFormatter.m in Sources */,
 				273121EC175504C100F4DC0B /* main.m in Sources */,
 			);
@@ -664,6 +716,7 @@
 				27B4D22E1755316E008540B8 /* en */,
 			);
 			name = FLCodeGeneratorDocument.xib;
+			path = ../Resources;
 			sourceTree = "<group>";
 		};
 		27B4D22F1755316E008540B8 /* FLWsdlDocument.xib */ = {
@@ -672,6 +725,7 @@
 				27B4D2301755316E008540B8 /* en */,
 			);
 			name = FLWsdlDocument.xib;
+			path = ../Resources;
 			sourceTree = "<group>";
 		};
 		27B4D2311755316E008540B8 /* MainMenu.xib */ = {
@@ -680,6 +734,7 @@
 				27B4D2321755316E008540B8 /* en */,
 			);
 			name = MainMenu.xib;
+			path = ../Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

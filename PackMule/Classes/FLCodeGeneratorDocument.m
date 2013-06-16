@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "FLCodeViewController.h"
+#import "NSWindowController+FLModalAdditions.h"
+#import "FLErrorWindowController.h"
 #import "FLCodeGeneratorDocument.h"
 #import "FLCodeGenerator.h"
 #import "FLResultsWindowController.h"
@@ -15,16 +18,86 @@
 #import "FLWsdlCodeProjectReader.h"
 #import "FLErrorWindowController.h"
 #import "FLCodeProjectLocation.h"
+#import "FLXmlDocumentFormatter.h"
+#import "FLResultsWindowController.h"
+#import "NSTextView+FLTextWrapping.h"
+
+#import "FLResultsViewController.h"
+
 
 @implementation FLCodeGeneratorDocument
 
 - (NSString *)windowNibName {
-	// Override returning the nib file name of the document
-	// If you need to use a subclass of NSWindowController or if your document supports multiple NSWindowControllers, you should remove this method and override -makeWindowControllers instead.
 	return @"FLCodeGeneratorDocument";
 }
 
-- (void) didGeneratorCodeWithResult:(FLPromisedResult) result {
+#if FL_MRC
+- (void) dealloc {
+    [_stringLoadedFromFile release];
+    [super dealloc];
+}
+#endif
+
+- (NSWindowController*) windowController {
+    return [self.windowControllers objectAtIndex:0];
+}
+
+- (NSWindow*) window {
+    return [[self.windowControllers objectAtIndex:0] window];
+}
+
+- (IBAction) prettyPrintText:(id) sender {
+    @try {
+        [_codeViewController prettyPrintText:sender];
+    }
+    @catch(NSException* ex) {
+        [self.windowController showErrorAlert:@"Pretty print, Pretty Schmint." caption:nil error:ex.error];
+    }
+}
+
+- (void) setDefaultCode {
+    [_codeViewController setDefaultCode];
+}
+
+- (void)windowControllerDidLoadNib:(NSWindowController *) aController {
+	[super windowControllerDidLoadNib:aController];
+
+    if(FLStringIsNotEmpty(_stringLoadedFromFile)) {
+        [_codeViewController setCode:_stringLoadedFromFile];
+    }
+    else {
+        [_codeViewController setDefaultCode];
+    }
+
+    FLReleaseWithNil(_stringLoadedFromFile);
+}
+
+- (NSData *)dataOfType:(NSString *)typeName error:(NSError **)outError {
+	return [_codeViewController.code dataUsingEncoding:NSUTF8StringEncoding];
+}
+
+- (BOOL)readFromData:(NSData *)data ofType:(NSString *)typeName error:(NSError **)outError {
+
+    NSString* code = FLAutorelease([[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+
+    if(_codeViewController) {
+        [_codeViewController setCode:code];
+    }
+    else {
+        FLSetObjectWithRetain(_stringLoadedFromFile, code);
+    }
+
+	return YES;
+}
+
+- (IBAction) revealInFinder:(id) sender {
+    NSURL* fileURL = [self fileURL];
+    if(fileURL) {
+        [[NSWorkspace sharedWorkspace] selectFile:nil inFileViewerRootedAtPath:[fileURL.path stringByDeletingLastPathComponent]];
+    }
+}
+
+- (void) didGenerateCodeWithResult:(FLPromisedResult) result {
 
     FLAssert([NSThread isMainThread]);
 
@@ -60,7 +133,7 @@
 
         FLCodeGeneratorResult* result = [generator generateCodeWithCodeProject:project fromLocation:resourceDescriptor];
 
-        [self didGeneratorCodeWithResult:result];
+        [self didGenerateCodeWithResult:result];
         
     }
     @catch(NSException* ex) {
@@ -68,13 +141,48 @@
     }
 }
 
-- (void) setDefaultCode {
-	NSURL* defaultXmlPath = [[NSBundle mainBundle] URLForResource:@"DefaultXmlFile" withExtension:@"xml"];
-    NSString* defaultXml = [NSString stringWithContentsOfURL:defaultXmlPath encoding:NSUTF8StringEncoding  error:nil];
-    if(FLStringIsNotEmpty(defaultXml)) {
-        self.textView.string = defaultXml;
+- (void)document:(NSDocument *)document
+didSaveBeforeGenerating:(BOOL)didSaveSuccessfully
+     contextInfo:(void *)contextInfo {
+
+	if(didSaveSuccessfully) {
+		[self generateNow];
+	}
+    else {
+        // Error
     }
 }
+
+- (IBAction) generateCode:(id) sender {
+	[self saveDocumentWithDelegate:self didSaveSelector:@selector(document:didSaveBeforeGenerating:contextInfo:) contextInfo:nil];
+}
+
+- (void) displayResult:(NSString*) title results:(NSString*) result {
+//    NSAttributedString* attrString = FLAutorelease([[NSAttributedString alloc] initWithString:result]);
+//    [[_resultsTextView textStorage] appendAttributedString:attrString];
+
+    [_resultsViewController.textView setString:result];
+
+//    FLSheetHandler* handler = [FLSheetHandler sheetHandler];
+//    handler.modalWindowController = [FLResultsWindowController resultWindowController:title results:result];
+//    handler.hostWindow = self.window;
+//    [handler beginSheet];
+}
+
+
+
+
+//
+//- (void)sheetDidEnd:(NSAlert*)alert 
+//         returnCode:(NSInteger)returnCode 
+//        contextInfo:(void*)contextInfo {
+//    [NSApp endModalSession:_modalSession];
+//    self.resultsWindow = nil;
+//}
+
+
+
+
 
 
 
