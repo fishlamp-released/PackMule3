@@ -10,6 +10,10 @@
 #import "FLXmlDocumentFormatter.h"
 #import "NSTextView+FLTextWrapping.h"
 
+#import "FLXmlDocumentBuilder.h"
+
+#import "FLCodeObject.h"
+
 @interface FLCodeViewController ()
 @property (readwrite, strong, nonatomic) id documentFormatter;
 @end
@@ -72,6 +76,30 @@
 - (BOOL)textView:(NSTextView *)textView shouldChangeTextInRange:(NSRange)affectedCharRange replacementString:(NSString *)replacementString {
 
     return YES;
+}
+
+- (void) insertCode:(NSString*) code {
+//   NSRange insertion = [self.textView selectedRange];
+
+   [self.textView insertText:code];
+}
+
+- (void) insertObjectOfClass:(Class) class name:(NSString*) name {
+    FLXmlDocumentBuilder* xml = [FLXmlDocumentBuilder xmlStringBuilder];
+    [xml openElement:[FLXmlElement xmlElement:name]];
+    FLObjectDescriber* describer = [class objectDescriber];
+
+    for(FLPropertyDescriber* property in describer.propertyEnumerator) {
+        [xml addElement:[FLXmlElement xmlElement:property.propertyName]];
+    }
+    [xml closeElement];
+
+    [self insertCode:[xml buildString]];
+
+}
+
+- (IBAction) insertObject:(id) sender {
+    [self insertObjectOfClass:[FLCodeObject class] name:@"object"];
 }
 
 @end

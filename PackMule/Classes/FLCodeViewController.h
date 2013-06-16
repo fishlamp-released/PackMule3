@@ -21,4 +21,6 @@
 
 - (IBAction) prettyPrintText:(id) sender;
 
+- (IBAction) insertObject:(id) sender;
+
 @end
