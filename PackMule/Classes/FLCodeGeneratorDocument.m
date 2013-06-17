@@ -141,6 +141,16 @@
     [_resultsViewController.logger appendLineWithFormat:@"Removed: %@", file.relativePathToProject];
 }
 
+- (void) codeGenerator:(id) codeGenerator
+generationDidFailForProject:(FLCodeProject*) project
+             withError:(NSError*) error {
+
+    [_resultsViewController.logger appendLineWithFormat:@"Code Generation Failed: %@", [error localizedDescription]];
+}
+
+- (void) codeGenerator:(id) codeGenerator generationDidFinishForProject:(FLCodeProject*) project {
+    [_resultsViewController.logger appendLine:@"generated ok"];
+}
 
 - (void) generateNow {
 
@@ -151,14 +161,7 @@
     generator.observer = self;
 
     FLCodeGeneratorOperation* operation = [FLCodeGeneratorOperation codeGeneratorOperation:generator projectProvider:provider];
-    [operation runAsynchronously:^(id result) {
-        if([result error]) {
-            [self.windowController showErrorAlert:@"Code Generation Failed" caption:nil error:[result error]];
-        }
-        else {
-            [_resultsViewController.logger appendLine:@"generated ok"];
-        }
-    }];
+    [operation runAsynchronously];
 
 
 //    @try {
