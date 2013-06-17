@@ -8,10 +8,12 @@
 
 
 #import "FishLamp.h"
+#import "FLCodeGenerator.h"
+
 @class FLCodeViewController;
 @class FLResultsViewController;
 
-@interface FLCodeGeneratorDocument : NSDocument {
+@interface FLCodeGeneratorDocument : NSDocument<FLCodeGeneratorObserver> {
 @private
     IBOutlet FLResultsViewController* _resultsViewController;
     IBOutlet FLCodeViewController* _codeViewController;
@@ -19,8 +21,6 @@
 }
 
 - (NSWindowController*) windowController;
-
-- (void) displayResult:(NSString*) title results:(NSString*) result;
 
 - (void) generateNow;
 - (void) setDefaultCode;

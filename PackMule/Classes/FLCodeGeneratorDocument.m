@@ -6,23 +6,21 @@
 //	Copyright Greentongue Software 2009 . All rights reserved.
 //
 
-#import "AppDelegate.h"
-#import "FLCodeViewController.h"
-#import "NSWindowController+FLModalAdditions.h"
-#import "FLErrorWindowController.h"
 #import "FLCodeGeneratorDocument.h"
-#import "FLCodeGenerator.h"
-#import "FLResultsWindowController.h"
-#import "FLObjCCodeGenerator.h"
-#import "FLXmlCodeProjectReader.h"
-#import "FLWsdlCodeProjectReader.h"
-#import "FLErrorWindowController.h"
-#import "FLCodeProjectLocation.h"
-#import "FLXmlDocumentFormatter.h"
-#import "FLResultsWindowController.h"
-#import "NSTextView+FLTextWrapping.h"
 
+// code generator
+#import "FLObjCCodeGenerator.h"
+#import "FLCodeGeneratorProjectProvider.h"
+#import "FLCodeGeneratorOperation.h"
+#import "FLCodeGeneratorFile.h"
+
+// view controllers
 #import "FLResultsViewController.h"
+#import "FLCodeViewController.h"
+#import "FLErrorWindowController.h"
+
+// misc
+#import "NSWindowController+FLModalAdditions.h"
 
 
 @implementation FLCodeGeneratorDocument
@@ -97,48 +95,84 @@
     }
 }
 
-- (void) didGenerateCodeWithResult:(FLPromisedResult) result {
+//- (void) didGenerateCodeWithResult:(FLPromisedResult) result {
+//
+//    FLAssert([NSThread isMainThread]);
+//
+//    FLPrettyString* builder = [FLPrettyString prettyString];
+//
+//    FLCodeGeneratorResult* codeGeneratorResult = result;
+//    
+//    for(NSString* file in codeGeneratorResult.addedFiles){
+//        [builder appendLineWithFormat:@"New: %@", file];
+//    }
+//    for(NSString* file in codeGeneratorResult.changedFiles) {
+//        [builder appendLineWithFormat:@"Updated: %@", file];
+//    }
+//    for(NSString* file in codeGeneratorResult.unchangedFiles) {
+//        [builder appendLineWithFormat:@"Unchanged: %@", file];
+//    }
+//    
+//    [self displayResult:@"generated ok" results:builder.string];
+//}
 
-    FLAssert([NSThread isMainThread]);
 
-    FLPrettyString* builder = [FLPrettyString prettyString];
+- (void) codeGenerator:(id) codeGenerator
+       didWriteNewFile:(id<FLCodeGeneratorFile>) file {
 
-    FLCodeGeneratorResult* codeGeneratorResult = result;
-    
-    for(NSString* file in codeGeneratorResult.addedFiles){
-        [builder appendLineWithFormat:@"New: %@", file];
-    }
-    for(NSString* file in codeGeneratorResult.changedFiles) {
-        [builder appendLineWithFormat:@"Updated: %@", file];
-    }
-    for(NSString* file in codeGeneratorResult.unchangedFiles) {
-        [builder appendLineWithFormat:@"Unchanged: %@", file];
-    }
-    
-    [self displayResult:@"generated ok" results:builder.string];
+    [_resultsViewController.logger appendLineWithFormat:@"New: %@", file.relativePathToProject];
 }
 
+- (void) codeGenerator:(id) codeGenerator
+         didUpdateFile:(id<FLCodeGeneratorFile>) file {
+
+    [_resultsViewController.logger appendLineWithFormat:@"Updated: %@", file.relativePathToProject];
+}
+
+- (void) codeGenerator:(id) codeGenerator
+           didSkipFile:(id<FLCodeGeneratorFile>) file {
+
+    [_resultsViewController.logger appendLineWithFormat:@"Unchanged: %@", file.relativePathToProject];
+}
+
+- (void) codeGenerator:(id) codeGenerator
+         didRemoveFile:(id<FLCodeGeneratorFile>) file {
+
+    [_resultsViewController.logger appendLineWithFormat:@"Removed: %@", file.relativePathToProject];
+}
+
+
 - (void) generateNow {
-  
-    @try {
-        FLCodeProjectLocation* resourceDescriptor = [FLCodeProjectLocation resourceDescriptor:[self fileURL] resourceType:FLCodeProjectLocationTypeFile];
-        
-        FLCodeProjectReader* reader = [FLCodeProjectReader codeProjectReader];
-        [reader addFileReader:[FLXmlCodeProjectReader xmlCodeProjectReader]];
-        [reader addFileReader:[FLWsdlCodeProjectReader wsdlCodeReader]];
-        
-        FLObjcCodeGenerator* generator = [FLObjcCodeGenerator  objcCodeGenerator];
 
-        FLCodeProject* project = [reader readProjectFromLocation:resourceDescriptor ];
+    [_resultsViewController.logger clearContents];
 
-        FLCodeGeneratorResult* result = [generator generateCodeWithCodeProject:project fromLocation:resourceDescriptor];
+    FLCodeGeneratorProjectProvider* provider = [FLCodeGeneratorProjectProvider codeGeneratorProjectProvider:[self fileURL]];
+    FLObjcCodeGenerator* generator = [FLObjcCodeGenerator  objcCodeGenerator];
+    generator.observer = self;
 
-        [self didGenerateCodeWithResult:result];
-        
-    }
-    @catch(NSException* ex) {
-        [self.windowController showErrorAlert:@"Code Generation Failed" caption:nil error:ex.error];
-    }
+    FLCodeGeneratorOperation* operation = [FLCodeGeneratorOperation codeGeneratorOperation:generator projectProvider:provider];
+    [operation runAsynchronously:^(id result) {
+        if([result error]) {
+            [self.windowController showErrorAlert:@"Code Generation Failed" caption:nil error:[result error]];
+        }
+        else {
+            [_resultsViewController.logger appendLine:@"generated ok"];
+        }
+    }];
+
+
+//    @try {
+//        FLCodeProjectReader* reader = [FLCodeProjectReader codeProjectReader];
+//        [reader addFileReader:[FLXmlCodeProjectReader xmlCodeProjectReader]];
+//        [reader addFileReader:[FLWsdlCodeProjectReader wsdlCodeReader]];
+//        FLCodeProject* project = [reader readProjectFromFileURL:[self fileURL]];
+//
+//        FLObjcCodeGenerator* generator = [FLObjcCodeGenerator  objcCodeGenerator];
+//        [generator generateCodeWithCodeProject:project withObserver:self];
+//    }
+//    @catch(NSException* ex) {
+//        [self.windowController showErrorAlert:@"Code Generation Failed" caption:nil error:ex.error];
+//    }
 }
 
 - (void)document:(NSDocument *)document
@@ -157,17 +191,17 @@ didSaveBeforeGenerating:(BOOL)didSaveSuccessfully
 	[self saveDocumentWithDelegate:self didSaveSelector:@selector(document:didSaveBeforeGenerating:contextInfo:) contextInfo:nil];
 }
 
-- (void) displayResult:(NSString*) title results:(NSString*) result {
-//    NSAttributedString* attrString = FLAutorelease([[NSAttributedString alloc] initWithString:result]);
-//    [[_resultsTextView textStorage] appendAttributedString:attrString];
-
-    [_resultsViewController.textView setString:result];
-
-//    FLSheetHandler* handler = [FLSheetHandler sheetHandler];
-//    handler.modalWindowController = [FLResultsWindowController resultWindowController:title results:result];
-//    handler.hostWindow = self.window;
-//    [handler beginSheet];
-}
+//- (void) displayResult:(NSString*) title results:(NSString*) result {
+////    NSAttributedString* attrString = FLAutorelease([[NSAttributedString alloc] initWithString:result]);
+////    [[_resultsTextView textStorage] appendAttributedString:attrString];
+//
+//    [_resultsViewController.textView setString:result];
+//
+////    FLSheetHandler* handler = [FLSheetHandler sheetHandler];
+////    handler.modalWindowController = [FLResultsWindowController resultWindowController:title results:result];
+////    handler.hostWindow = self.window;
+////    [handler beginSheet];
+//}
 
 
 

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		270C820A176E3C62005E179D /* FLTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270C8209176E3C62005E179D /* FLTextViewController.m */; };
 		270C8213176E3F36005E179D /* FLResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270C8212176E3F36005E179D /* FLResultsViewController.m */; };
 		273121B11755043E00F4DC0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274A4ADE161268AA0069944E /* Foundation.framework */; };
 		273121B41755043E00F4DC0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 273121B31755043E00F4DC0B /* main.m */; };
@@ -69,6 +68,7 @@
 		27B87CA1175FC9FD004A41B3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274A4AEA161268AB0069944E /* CoreData.framework */; };
 		27B87CA4175FCA17004A41B3 /* libFishLampCodeGenerator-64-MRC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 274D0BDD175D5CFC00B99DB6 /* libFishLampCodeGenerator-64-MRC.a */; };
 		27B87CA7175FCA49004A41B3 /* FishLampOSXAppLib-64-MRC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B87C8B175FC9D5004A41B3 /* FishLampOSXAppLib-64-MRC.a */; };
+		27F01F1F176FA18200DEE29A /* FLDefaultFontLoggingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F01F1E176FA18200DEE29A /* FLDefaultFontLoggingViewController.m */; };
 		27F1AF9F175FC7720086E14A /* WhittleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F1AF9E175FC7710086E14A /* WhittleTool.m */; };
 /* End PBXBuildFile section */
 
@@ -159,8 +159,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		270C8208176E3C62005E179D /* FLTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTextViewController.h; sourceTree = "<group>"; };
-		270C8209176E3C62005E179D /* FLTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTextViewController.m; sourceTree = "<group>"; };
 		270C8211176E3F36005E179D /* FLResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLResultsViewController.h; sourceTree = "<group>"; };
 		270C8212176E3F36005E179D /* FLResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLResultsViewController.m; sourceTree = "<group>"; };
 		2721A829175D47CA00D94132 /* FishLampCodeGenerator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FishLampCodeGenerator.xcodeproj; path = ../../Frameworks/CodeGenerator/FishLampCodeGeneratorLib/FishLampCodeGenerator.xcodeproj; sourceTree = "<group>"; };
@@ -223,6 +221,8 @@
 		27B4F082169A318600D56DFA /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Quartz.framework; sourceTree = DEVELOPER_DIR; };
 		27B4F085169A31B700D56DFA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		27B4F087169A31C500D56DFA /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		27F01F1D176FA18200DEE29A /* FLDefaultFontLoggingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLDefaultFontLoggingViewController.h; sourceTree = "<group>"; };
+		27F01F1E176FA18200DEE29A /* FLDefaultFontLoggingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLDefaultFontLoggingViewController.m; sourceTree = "<group>"; };
 		27F1AF85175FC6020086E14A /* WhittleSharedTargetSettings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = WhittleSharedTargetSettings.xcconfig; sourceTree = "<group>"; };
 		27F1AF86175FC6020086E14A /* WhittleTargetSettings-64-MRC.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "WhittleTargetSettings-64-MRC.xcconfig"; sourceTree = "<group>"; };
 		27F1AF9D175FC7710086E14A /* WhittleTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhittleTool.h; sourceTree = "<group>"; };
@@ -470,10 +470,10 @@
 			children = (
 				279FE7C0176E2BCB0047B077 /* FLCodeViewController.h */,
 				279FE7C1176E2BCB0047B077 /* FLCodeViewController.m */,
-				270C8208176E3C62005E179D /* FLTextViewController.h */,
-				270C8209176E3C62005E179D /* FLTextViewController.m */,
 				270C8211176E3F36005E179D /* FLResultsViewController.h */,
 				270C8212176E3F36005E179D /* FLResultsViewController.m */,
+				27F01F1D176FA18200DEE29A /* FLDefaultFontLoggingViewController.h */,
+				27F01F1E176FA18200DEE29A /* FLDefaultFontLoggingViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -675,12 +675,12 @@
 				273121E5175504C100F4DC0B /* FLCodeGeneratorDocument.m in Sources */,
 				273121E6175504C100F4DC0B /* FLInputWindowController.m in Sources */,
 				273121E8175504C100F4DC0B /* FLResultsWindowController.m in Sources */,
-				270C820A176E3C62005E179D /* FLTextViewController.m in Sources */,
 				270C8213176E3F36005E179D /* FLResultsViewController.m in Sources */,
 				273121EA175504C100F4DC0B /* FLWsdlDocument.m in Sources */,
 				279FE7C2176E2BCB0047B077 /* FLCodeViewController.m in Sources */,
 				273121EB175504C100F4DC0B /* FLXmlDocumentFormatter.m in Sources */,
 				273121EC175504C100F4DC0B /* main.m in Sources */,
+				27F01F1F176FA18200DEE29A /* FLDefaultFontLoggingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

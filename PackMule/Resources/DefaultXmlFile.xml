@@ -38,7 +38,7 @@
     
     <!-- example object defininition -->
     
-    <object className="FLTestObject" superclass="FLModelObject">
+    <class name="FLTestObject" superclass="FLModelObject">
         <property name="name" type="string"/>
         <property name="number" type="float"/>
         <property type="int" name="testInt" defaultValue="5">
@@ -71,5 +71,5 @@
                 <arrayType name="parser" typeName="FLXmlParser"/>
             </arrayTypes>
         </property>
-    </object>
+    </class>
 </code>
