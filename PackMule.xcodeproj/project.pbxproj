@@ -70,6 +70,8 @@
 		27B87CA7175FCA49004A41B3 /* FishLampOSXAppLib-64-MRC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B87C8B175FC9D5004A41B3 /* FishLampOSXAppLib-64-MRC.a */; };
 		27F01F1F176FA18200DEE29A /* FLDefaultFontLoggingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F01F1E176FA18200DEE29A /* FLDefaultFontLoggingViewController.m */; };
 		27F1AF9F175FC7720086E14A /* WhittleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F1AF9E175FC7710086E14A /* WhittleTool.m */; };
+		78DA20411774F54F003E3A99 /* FLJsonDocumentFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DA20401774F54F003E3A99 /* FLJsonDocumentFormatter.m */; };
+		78DA204A1774F6B3003E3A99 /* FLDocumentFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DA20491774F6B3003E3A99 /* FLDocumentFormatter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -228,6 +230,10 @@
 		27F1AF9D175FC7710086E14A /* WhittleTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhittleTool.h; sourceTree = "<group>"; };
 		27F1AF9E175FC7710086E14A /* WhittleTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhittleTool.m; sourceTree = "<group>"; };
 		27F1AFA0175FC9790086E14A /* FishLampOSXAppLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FishLampOSXAppLib.xcodeproj; path = ../../Frameworks/OSX/FishLampOSXAppLib/FishLampOSXAppLib.xcodeproj; sourceTree = "<group>"; };
+		78DA203F1774F54F003E3A99 /* FLJsonDocumentFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLJsonDocumentFormatter.h; sourceTree = "<group>"; };
+		78DA20401774F54F003E3A99 /* FLJsonDocumentFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLJsonDocumentFormatter.m; sourceTree = "<group>"; };
+		78DA20481774F6B3003E3A99 /* FLDocumentFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLDocumentFormatter.h; sourceTree = "<group>"; };
+		78DA20491774F6B3003E3A99 /* FLDocumentFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLDocumentFormatter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -461,6 +467,10 @@
 			children = (
 				273121DD175504C100F4DC0B /* FLXmlDocumentFormatter.h */,
 				273121DE175504C100F4DC0B /* FLXmlDocumentFormatter.m */,
+				78DA203F1774F54F003E3A99 /* FLJsonDocumentFormatter.h */,
+				78DA20401774F54F003E3A99 /* FLJsonDocumentFormatter.m */,
+				78DA20481774F6B3003E3A99 /* FLDocumentFormatter.h */,
+				78DA20491774F6B3003E3A99 /* FLDocumentFormatter.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -681,6 +691,8 @@
 				273121EB175504C100F4DC0B /* FLXmlDocumentFormatter.m in Sources */,
 				273121EC175504C100F4DC0B /* main.m in Sources */,
 				27F01F1F176FA18200DEE29A /* FLDefaultFontLoggingViewController.m in Sources */,
+				78DA20411774F54F003E3A99 /* FLJsonDocumentFormatter.m in Sources */,
+				78DA204A1774F6B3003E3A99 /* FLDocumentFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

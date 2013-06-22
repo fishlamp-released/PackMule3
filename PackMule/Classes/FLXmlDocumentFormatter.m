@@ -7,6 +7,7 @@
 //
 
 #import "FLXmlDocumentFormatter.h"
+#import "FLXmlParser.h"
 
 #define XMLOPTIONS NSXMLNodePreserveCDATA | NSXMLNodeCompactEmptyElement | NSXMLDocumentTidyXML
 
@@ -72,6 +73,11 @@
 //    
 //    return string;
 }
+
+- (BOOL) canFormatCode:(NSString*) code {
+    return [FLXmlParser canParseData:[code dataUsingEncoding:NSUTF8StringEncoding]];
+}
+
 
 
 

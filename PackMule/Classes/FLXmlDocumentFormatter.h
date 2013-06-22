@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FLDocumentFormatter.h"
 
-@interface FLXmlDocumentFormatter : NSObject
+@interface FLXmlDocumentFormatter : FLDocumentFormatter
 
 + (id) xmlDocumentFormatter;
 

@@ -6,13 +6,14 @@
 //  Copyright (c) 2013 Mike Fullerton. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
-
 #import "FLTextViewController.h"
+
+@class FLDocumentFormatter;
 
 @interface FLCodeViewController : FLTextViewController {
 @private
-    id _documentFormatter;
+    FLDocumentFormatter* _documentFormatter;
+    NSMutableArray* _formatters;
 }
 
 @property (readwrite, strong, nonatomic) NSString* code;
