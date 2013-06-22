@@ -38,11 +38,11 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>3.0.0.29</string>
+	<string>3.0.0.30</string>
 	<key>CFBundleSignature</key>
 	<string>GTSW</string>
 	<key>CFBundleVersion</key>
-	<string>3.0.0.29</string>
+	<string>3.0.0.30</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.developer-tools</string>
 	<key>NSMainNibFile</key>
