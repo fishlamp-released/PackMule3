@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "FishLampCocoa.h"
+#import "FishLamp.h"
 
 #import "FLDocumentSection.h"
 
