@@ -3,5 +3,5 @@
 //
 
 #ifdef __OBJC__
-    #import "FishLamp.h"
+    #import "FishLampOSX-Prefix.pch"
 #endif
