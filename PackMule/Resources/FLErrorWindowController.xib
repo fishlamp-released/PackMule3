@@ -3,12 +3,12 @@
 	<data>
 		<int key="IBDocument.SystemTarget">1060</int>
 		<string key="IBDocument.SystemVersion">12E55</string>
-		<string key="IBDocument.InterfaceBuilderVersion">4457.6</string>
+		<string key="IBDocument.InterfaceBuilderVersion">4471.1</string>
 		<string key="IBDocument.AppKitVersion">1187.39</string>
 		<string key="IBDocument.HIToolboxVersion">626.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin</string>
-			<string key="NS.object.0">4457.6</string>
+			<string key="NS.object.0">4471.1</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
 			<string>NSButton</string>
@@ -137,7 +137,7 @@
 													<object class="NSPSMatrix" key="NSFrameMatrix"/>
 													<string key="NSFrameSize">{474, 104}</string>
 													<reference key="NSSuperview" ref="982740744"/>
-													<reference key="NSNextKeyView" ref="867419580"/>
+													<reference key="NSNextKeyView" ref="721628212"/>
 													<object class="NSTextContainer" key="NSTextContainer" id="167717054">
 														<object class="NSLayoutManager" key="NSLayoutManager">
 															<object class="NSTextStorage" key="NSTextStorage">
@@ -211,7 +211,7 @@
 											<reference key="NSDocView" ref="279777974"/>
 											<reference key="NSBGColor" ref="380951508"/>
 											<object class="NSCursor" key="NSCursor">
-												<string key="NSHotSpot">{1, -1}</string>
+												<string key="NSHotSpot">{5, 5}</string>
 												<int key="NSCursorType">0</int>
 											</object>
 											<int key="NScvFlags">4</int>
@@ -245,7 +245,7 @@
 									<object class="NSPSMatrix" key="NSFrameMatrix"/>
 									<string key="NSFrame">{{0, -1}, {478, 108}}</string>
 									<reference key="NSSuperview" ref="123680403"/>
-									<reference key="NSNextKeyView" ref="721628212"/>
+									<reference key="NSNextKeyView" ref="982740744"/>
 									<int key="NSsFlags">133683</int>
 									<reference key="NSVScroller" ref="867419580"/>
 									<reference key="NSHScroller" ref="721628212"/>
@@ -372,6 +372,14 @@
 						<reference key="destination" ref="805511460"/>
 					</object>
 					<string key="id">4</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">initialFirstResponder</string>
+						<reference key="source" ref="1047765360"/>
+						<reference key="destination" ref="133804211"/>
+					</object>
+					<string key="id">uIX-QO-bKZ</string>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
