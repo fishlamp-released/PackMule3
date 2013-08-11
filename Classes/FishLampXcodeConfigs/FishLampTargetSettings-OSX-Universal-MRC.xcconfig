@@ -1,0 +1,13 @@
+//
+//  FishLampTargetMac.xcconfig
+//  
+//
+//  Created by Mike Fullerton on 11/13/12.
+//
+//
+
+#include "FishLampXcodeConfigs/FishLampIncludedConfig-OSX-Universal.xcconfig"
+#include "FishLampXcodeConfigs/FishLampIncludedConfig-MRC.xcconfig"
+#include "FishLampXcodeConfigs/FishLampIncludedConfig-Preprocessor.xcconfig"
+#include "FishLampXcodeConfigs/FishLampPaths.xcconfig"
+

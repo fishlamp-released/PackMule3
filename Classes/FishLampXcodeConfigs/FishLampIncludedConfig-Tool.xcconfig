@@ -1,0 +1,14 @@
+//
+//  FishLamp-Target.xcconfig
+//  
+//
+//  Created by Mike Fullerton on 12/10/12.
+//
+//
+
+DEPLOYMENT_LOCATION = YES
+DSTROOT = ~/Library
+INSTALL_PATH = /FishLamp/Tests
+MACH_O_TYPE = mh_execute
+EXECUTABLE_EXTENSION = 
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>workspace</key>
+	<string>PackMule.xcworkspace</string>
+	<key>project</key>
+	<string></string>
+	<key>scheme</key>
+	<string>PackMule</string>
+	<key>configuration</key>
+	<string>Release</string>
+	<key>clean</key>
+	<true/>
+	<key>make_ipa</key>
+	<false/>
+	<key>signature</key>
+	<string></string>
+	<key>profile</key>
+	<string></string>
+	<key>increment_version</key>
+	<false/>
+	<key>archive</key>
+	<false/>
+	<key>app_info_plist</key>
+	<string>Info.plist</string>
+	<key>test_flight_team_token</key>
+	<string></string>
+	<key>test_flight_api_token</key>
+	<string></string>
+	<key>post_testflight_build</key>
+	<false/>
+	<key>test_flight_teams</key>
+	<string></string>
+	<key>archive_folder</key>
+	<string></string>
+	<key>platform</key>
+	<string>macosx</string>
+</dict>
+</plist>

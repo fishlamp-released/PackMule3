@@ -1,0 +1,34 @@
+
+FISHLAMP = ../../../FishLamp
+
+FISHLAMP_CLASSES = ../../../FishLamp/Frameworks
+
+FISHLAMP_ALL = $(FISHLAMP_CLASSES)/**
+
+FISHLAMP_CORE = $(FISHLAMP_CLASSES)/Core/Classes/**
+
+FISHLAMP_COCOA = $(FISHLAMP_CLASSES)/Cocoa/Classes/** $(FISHLAMP_CORE)
+
+FISHLAMP_COCOA_UI = $(FISHLAMP_CLASSES)/CocoaUI/Classes/** $(FISHLAMP_COCOA)
+
+// OSX
+FISHLAMP_OSX = $(FISHLAMP_CLASSES)/OSX/Classes/** $(FISHLAMP_COCOA_UI)
+
+// IOS
+FISHLAMP_IOS = $(FISHLAMP_CLASSES)/iOS/Classes/** $(FISHLAMP_COCOA_UI)
+
+// Addons
+FISHLAMP_CONNECT = $(FISHLAMP_CLASSES)/Connect/WebServices/
+FISHLAMP_CONNECT_ALL = $(FISHLAMP_CLASSES)/Connect/WebServices/**
+
+FISHLAMP_SUBMODULES = $(FISHLAMP)/Submodules/** 
+
+// some experimental cocoas2d support
+FISHLAMP_COCOS2D = $(FISHLAMP)/Submodules/cocos2d
+
+// need to seperate ios and mac
+FISHLAMP_COCOS2D_MAC = $(FISHLAMP_COCOS2D)/cocos2d $(FISHLAMP_COCOS2D)/cocos2d/Platforms $((FISHLAMP_COCOS2D)/cocos2d/Platforms/Mac 
+
+FISHLAMP_ANIMATION_MAC = $(FISHLAMP_CLASSES)/Animation/** $(FISHLAMP_COCOS2D_MAC) $(FISHLAMP_COCOS2D)/external/**
+
+FISHLAMP_CODE_GENERATOR = $(FISHLAMP_CLASSES)/CodeGenerator/Classes/** 

@@ -1,0 +1,12 @@
+//
+//  Created by Mike Fullerton on 7/11/12.
+//  Copyright (c) 2012 GreenTongue Software. All rights reserved.
+//
+
+#include "FishLampXcodeConfigs/FishLampIncludedConfig-Tool.xcconfig"
+
+GCC_PRECOMPILE_PREFIX_HEADER = YES
+GCC_PREFIX_HEADER = Whittle/Whittle-Prefix.pch
+PRODUCT_NAME = whittle
+HEADER_SEARCH_PATHS= $(inherited) $(FISHLAMP_OSX) $(FISHLAMP_CODE_GENERATOR)
+
