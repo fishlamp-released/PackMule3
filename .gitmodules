@@ -10,3 +10,6 @@
 [submodule "FishLamp-CocoaUI"]
 	path = FishLamp-CocoaUI
 	url = https://github.com/fishlamp/FishLamp-CocoaUI
+[submodule "Piecemeal-XcodeConfigs"]
+	path = Piecemeal-XcodeConfigs
+	url = https://github.com/piecemeal/Piecemeal-XcodeConfigs
