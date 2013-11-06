@@ -3,9 +3,23 @@
    LastUpgradeVersion = "0460"
    version = "1.3">
    <BuildAction
-      parallelizeBuildables = "YES"
+      parallelizeBuildables = "NO"
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "27A43AC315CDCCCB001CB13E"
+               BuildableName = "FishLamp-Objc-OSX-64-MRC-Lib.a"
+               BlueprintName = "FishLamp-Objc-OSX-64-MRC-Lib"
+               ReferencedContainer = "container:FishLamp-Objc/Xcode-Project/FishLamp-Objc.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"

@@ -8,4 +8,4 @@ GCC_PREFIX_HEADER = PackMule/PackMule-Prefix.pch
 PRODUCT_NAME = PackMule
 INFOPLIST_FILE = PackMule/Info.plist
 WRAPPER_EXTENSION = app
-HEADER_SEARCH_PATHS= $(inherited) $(FISHLAMP_COCOA_UI) $(FISHLAMP_OSX) $(FISHLAMP_CODE_GENERATOR)
+HEADER_SEARCH_PATHS= $(inherited) ../FishLamp-Objc/FishLamp-Objc/**

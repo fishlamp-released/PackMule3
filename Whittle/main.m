@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Mike Fullerton. All rights reserved.
 //
 
-#import "FishLamp.h"
+#import "FishLampMinimum.h"
 #import "WhittleTool.h"
 
 int main(int argc, const char * argv[])

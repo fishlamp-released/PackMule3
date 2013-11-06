@@ -10,10 +10,11 @@
 #import "FLXmlDocumentFormatter.h"
 #import "NSTextView+FLTextWrapping.h"
 
-#import "FLXmlDocumentBuilder.h"
+#import "FLXmlStringBuilder.h"
 #import "FLJsonDocumentFormatter.h"
 
 #import "FLCodeObject.h"
+#import "FLObjectDescriber.h"
 
 @interface FLCodeViewController ()
 @property (readwrite, strong, nonatomic) FLDocumentFormatter* documentFormatter;
@@ -104,14 +105,17 @@
 }
 
 - (void) insertObjectOfClass:(Class) class name:(NSString*) name {
-    FLXmlDocumentBuilder* xml = [FLXmlDocumentBuilder xmlStringBuilder];
-    [xml openElement:[FLXmlElement xmlElement:name]];
-    FLObjectDescriber* describer = [class objectDescriber];
+    FLXmlStringBuilder* xml = [FLXmlStringBuilder xmlStringBuilder];
 
-    for(FLPropertyDescriber* property in describer.propertyEnumerator) {
-        [xml addElement:[FLXmlElement xmlElement:property.propertyName]];
-    }
-    [xml closeElement];
+    [xml appendSection:[FLXmlElement xmlElement:name]
+            withSubsectionBlock:^{
+        FLObjectDescriber* describer = [class objectDescriber];
+
+        for(FLPropertyDescriber* property in describer.propertyEnumerator) {
+            [xml appendSection:[FLXmlElement xmlElement:property.propertyName]];
+        }
+    }];
+
 
     [self insertCode:[xml buildString]];
 

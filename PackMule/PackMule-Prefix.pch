@@ -3,5 +3,8 @@
 //
 
 #ifdef __OBJC__
-    #import "FishLampOSX-Prefix.pch"
+    #import <Foundation/Foundation.h>
+    #import <Cocoa/Cocoa.h>
+    #import <AppKit/AppKit.h>
+    #import "FishLampMinimum.h"
 #endif

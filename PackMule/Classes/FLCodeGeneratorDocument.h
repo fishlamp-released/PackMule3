@@ -7,11 +7,12 @@
 //
 
 
-#import "FishLamp.h"
+#import "FishLampMinimum.h"
 #import "FLCodeGenerator.h"
 
 @class FLCodeViewController;
 @class FLResultsViewController;
+@class FLOperationContext;
 
 @interface FLCodeGeneratorDocument : NSDocument<FLCodeGeneratorObserver> {
 @private

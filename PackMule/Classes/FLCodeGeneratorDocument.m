@@ -11,7 +11,7 @@
 // code generator
 #import "FLObjCCodeGenerator.h"
 #import "FLCodeGeneratorProjectProvider.h"
-#import "FLCodeGeneratorOperation.h"
+//#import "FLCodeGeneratorOperation.h"
 #import "FLCodeGeneratorFile.h"
 
 // view controllers
@@ -21,6 +21,8 @@
 
 // misc
 #import "NSWindowController+FLModalAdditions.h"
+
+#import "FishLampAsync.h"
 
 
 @implementation FLCodeGeneratorDocument
@@ -157,12 +159,14 @@ generationDidFailForProject:(FLCodeProject*) project
     [_resultsViewController.logger clearContents];
 
     FLCodeGeneratorProjectProvider* provider = [FLCodeGeneratorProjectProvider codeGeneratorProjectProvider:[self fileURL]];
-    FLObjcCodeGenerator* generator = [FLObjcCodeGenerator  objcCodeGenerator];
+    FLObjcCodeGenerator* generator = [FLObjcCodeGenerator  objcCodeGenerator:provider];
 
-    [generator.observers addObserver:[FLMainThreadObject mainThreadObject:self.nonretained_fl]]];
+    [generator addListener:[FLMainThreadObject mainThreadObject:self.nonretained_fl]];
 
-    FLCodeGeneratorOperation* operation = [FLCodeGeneratorOperation codeGeneratorOperation:generator projectProvider:provider];
-    [operation runAsynchronously];
+    [[FLOperationContext defaultContext] queueOperation:generator completion:^(FLPromisedResult result){
+        
+    }];
+    
 
 
 //    @try {

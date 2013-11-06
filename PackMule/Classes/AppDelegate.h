@@ -7,9 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "FishLamp.h"
-
-#import "FLDocumentSection.h"
+#import "FishLampMinimum.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate> {
 }
