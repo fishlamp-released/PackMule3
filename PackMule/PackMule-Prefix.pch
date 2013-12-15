@@ -1,10 +1,12 @@
 //
-// Prefix header for all source files of the 'PackMule' target in the 'PackMule' project
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
 //
 
 #ifdef __OBJC__
-    #import <Foundation/Foundation.h>
     #import <Cocoa/Cocoa.h>
-    #import <AppKit/AppKit.h>
-    #import "FishLampMinimum.h"
+
+    #import "FishLampCore.h"
+
 #endif

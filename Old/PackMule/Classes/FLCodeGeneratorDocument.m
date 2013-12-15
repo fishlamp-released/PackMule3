@@ -23,7 +23,7 @@
 #import "NSWindowController+FLModalAdditions.h"
 
 #import "FishLampAsync.h"
-#import "FLTextViewLogger.h"
+
 
 @implementation FLCodeGeneratorDocument
 

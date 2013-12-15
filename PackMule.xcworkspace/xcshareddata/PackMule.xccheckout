@@ -5,60 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>94D30421-DA31-44B8-88AE-3FEBC5C33964</string>
+	<string>67E41946-2E3F-4837-A226-D35FF08F6AEF</string>
 	<key>IDESourceControlProjectName</key>
 	<string>PackMule</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>483D2CB1-9184-4602-9E0B-F895B17FA7DD</key>
-		<string>https://github.com/fishlamp/FishLamp-Objc</string>
-		<key>6279F98E-11DA-46D3-83F1-8F308B8CD65B</key>
-		<string>https://github.com/piecemeal/Piecemeal-XcodeConfigs</string>
-		<key>DDA6A621-843F-4EE0-B6B9-720D3ECDE128</key>
-		<string>https://github.com/fishlamp/PackMule</string>
+		<key>63396A13-A160-48F1-A62C-1C6451696E7E</key>
+		<string>https://github.com/fishlamp/FishLamp</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>PackMule.xcworkspace</string>
+	<string>PackMule/PackMule.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>483D2CB1-9184-4602-9E0B-F895B17FA7DD</key>
-		<string>../FishLamp-Objc</string>
-		<key>6279F98E-11DA-46D3-83F1-8F308B8CD65B</key>
-		<string>../FishLamp-Objc/Xcode-Project/Piecemeal-XcodeConfigs</string>
-		<key>DDA6A621-843F-4EE0-B6B9-720D3ECDE128</key>
-		<string>..</string>
+		<key>63396A13-A160-48F1-A62C-1C6451696E7E</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/fishlamp/PackMule</string>
+	<string>https://github.com/fishlamp/FishLamp</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>DDA6A621-843F-4EE0-B6B9-720D3ECDE128</string>
+	<string>63396A13-A160-48F1-A62C-1C6451696E7E</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>483D2CB1-9184-4602-9E0B-F895B17FA7DD</string>
+			<string>63396A13-A160-48F1-A62C-1C6451696E7E</string>
 			<key>IDESourceControlWCCName</key>
-			<string>FishLamp-Objc</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>DDA6A621-843F-4EE0-B6B9-720D3ECDE128</string>
-			<key>IDESourceControlWCCName</key>
-			<string>PackMule</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>6279F98E-11DA-46D3-83F1-8F308B8CD65B</string>
-			<key>IDESourceControlWCCName</key>
-			<string>Piecemeal-XcodeConfigs</string>
+			<string>FishLamp</string>
 		</dict>
 	</array>
 </dict>
