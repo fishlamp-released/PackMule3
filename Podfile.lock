@@ -6,7 +6,7 @@ PODS:
   - FishLamp/Cocoa/BundleUtils (3.0.0):
     - FishLamp/Core
   - FishLamp/Cocoa/CodeBuilder (3.0.0):
-    - FishLamp/Cocoa/StringBuilder
+    - FishLamp/Cocoa/Strings
     - FishLamp/Core
   - FishLamp/Cocoa/CodeGenerator (3.0.0):
     - FishLamp/Cocoa/BundleUtils
@@ -16,7 +16,7 @@ PODS:
     - FishLamp/Cocoa/Files
     - FishLamp/Cocoa/ModelObject
     - FishLamp/Cocoa/ObjcRuntime
-    - FishLamp/Cocoa/StringBuilder
+    - FishLamp/Cocoa/Strings
     - FishLamp/Core
   - FishLamp/Cocoa/ColorUtils (3.0.0):
     - FishLamp/Cocoa/Compatibility
@@ -33,31 +33,31 @@ PODS:
     - FishLamp/Cocoa/Encoding/Soap
     - FishLamp/Cocoa/Encoding/Url
     - FishLamp/Cocoa/Encoding/Xml
-    - FishLamp/Cocoa/StringBuilder
+    - FishLamp/Cocoa/Strings
     - FishLamp/Core
   - FishLamp/Cocoa/Encoding/Base64 (3.0.0):
     - FishLamp/Cocoa/CodeBuilder
-    - FishLamp/Cocoa/StringBuilder
+    - FishLamp/Cocoa/Strings
     - FishLamp/Core
   - FishLamp/Cocoa/Encoding/Html (3.0.0):
     - FishLamp/Cocoa/CodeBuilder
-    - FishLamp/Cocoa/StringBuilder
+    - FishLamp/Cocoa/Strings
     - FishLamp/Core
   - FishLamp/Cocoa/Encoding/Json (3.0.0):
     - FishLamp/Cocoa/CodeBuilder
-    - FishLamp/Cocoa/StringBuilder
+    - FishLamp/Cocoa/Strings
     - FishLamp/Core
   - FishLamp/Cocoa/Encoding/Soap (3.0.0):
     - FishLamp/Cocoa/CodeBuilder
-    - FishLamp/Cocoa/StringBuilder
+    - FishLamp/Cocoa/Strings
     - FishLamp/Core
   - FishLamp/Cocoa/Encoding/Url (3.0.0):
     - FishLamp/Cocoa/CodeBuilder
-    - FishLamp/Cocoa/StringBuilder
+    - FishLamp/Cocoa/Strings
     - FishLamp/Core
   - FishLamp/Cocoa/Encoding/Xml (3.0.0):
     - FishLamp/Cocoa/CodeBuilder
-    - FishLamp/Cocoa/StringBuilder
+    - FishLamp/Cocoa/Strings
     - FishLamp/Core
   - FishLamp/Cocoa/Events (3.0.0):
     - FishLamp/Cocoa/Proxies
@@ -75,7 +75,7 @@ PODS:
     - FishLamp/Core
   - FishLamp/Cocoa/Proxies (3.0.0):
     - FishLamp/Core
-  - FishLamp/Cocoa/StringBuilder (3.0.0):
+  - FishLamp/Cocoa/Strings (3.0.0):
     - FishLamp/Core
   - FishLamp/Cocoa/Timer (3.0.0):
     - FishLamp/Core
@@ -153,7 +153,7 @@ EXTERNAL SOURCES:
     :path: FishLamp
 
 SPEC CHECKSUMS:
-  FishLamp: b00e7bfa355668b61f2c5b6f3a5dfd5173f4bdea
+  FishLamp: f65d2db21b24968bb6be5ca1b84bb710d43b4c50
   HockeySDK-Mac: 6962a05b59b1df0caa770a64b0b69912582a2e7b
 
 COCOAPODS: 0.28.0

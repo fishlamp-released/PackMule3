@@ -1,1 +1,1 @@
-../../../FishLamp/FishLampCocoa/Classes/StringBuilder/NSString+Lists.h
+../../../FishLamp/FishLampCocoa/Classes/Strings/NSString+Lists.h

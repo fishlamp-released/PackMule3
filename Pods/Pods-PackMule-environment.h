@@ -132,11 +132,11 @@
 #define COCOAPODS_VERSION_MINOR_FishLamp_Cocoa_Proxies 0
 #define COCOAPODS_VERSION_PATCH_FishLamp_Cocoa_Proxies 0
 
-// FishLamp/Cocoa/StringBuilder
-#define COCOAPODS_POD_AVAILABLE_FishLamp_Cocoa_StringBuilder
-#define COCOAPODS_VERSION_MAJOR_FishLamp_Cocoa_StringBuilder 3
-#define COCOAPODS_VERSION_MINOR_FishLamp_Cocoa_StringBuilder 0
-#define COCOAPODS_VERSION_PATCH_FishLamp_Cocoa_StringBuilder 0
+// FishLamp/Cocoa/Strings
+#define COCOAPODS_POD_AVAILABLE_FishLamp_Cocoa_Strings
+#define COCOAPODS_VERSION_MAJOR_FishLamp_Cocoa_Strings 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_Cocoa_Strings 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_Cocoa_Strings 0
 
 // FishLamp/Cocoa/Timer
 #define COCOAPODS_POD_AVAILABLE_FishLamp_Cocoa_Timer

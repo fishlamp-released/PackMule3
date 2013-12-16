@@ -60,10 +60,7 @@ Pod::Spec.new do |fishlamp|
     fishlamp.subspec 'Cocoa' do |cocoa|
 
         cocoa.subspec 'Utils' do |ss|
-            ss.dependency 'FishLamp/Core/Required'
-            ss.dependency 'FishLamp/Core/Strings'
-            ss.dependency 'FishLamp/Core/Errors'
-            ss.dependency 'FishLamp/Core/Assertions'
+            ss.dependency 'FishLamp/Core'
             ss.source_files = 'FishLampCocoa/Classes/Utils/**/*.{h,m}'
         end
 
@@ -80,6 +77,11 @@ Pod::Spec.new do |fishlamp|
         cocoa.subspec 'Containers' do |ss|
             ss.dependency 'FishLamp/Core'
             ss.source_files = 'FishLampCocoa/Classes/Containers/**/*.{h,m}'
+        end
+
+        cocoa.subspec 'ByteBuffer' do |ss|
+            ss.dependency 'FishLamp/Core'
+            ss.source_files = 'FishLampCocoa/Classes/ByteBuffer/**/*.{h,m}'
         end
 
         cocoa.subspec 'Events' do |ss|
@@ -125,14 +127,14 @@ Pod::Spec.new do |fishlamp|
             ss.source_files = 'FishLampCocoa/Classes/Services/**/*.{h,m}'
         end
 
-        cocoa.subspec 'StringBuilder' do |ss|
+        cocoa.subspec 'Strings' do |ss|
             ss.dependency 'FishLamp/Core'
-            ss.source_files = 'FishLampCocoa/Classes/StringBuilder/**/*.{h,m}'
+            ss.source_files = 'FishLampCocoa/Classes/Strings/**/*.{h,m}'
         end
 
         cocoa.subspec 'CodeBuilder' do |ss|
             ss.dependency 'FishLamp/Core'
-            ss.dependency 'FishLamp/Cocoa/StringBuilder'
+            ss.dependency 'FishLamp/Cocoa/Strings'
             ss.source_files = 'FishLampCocoa/Classes/CodeBuilder/**/*.{h,m}'
         end
 
@@ -143,7 +145,7 @@ Pod::Spec.new do |fishlamp|
 
         cocoa.subspec 'Encoding' do |encoding|
             encoding.dependency 'FishLamp/Core'
-            encoding.dependency 'FishLamp/Cocoa/StringBuilder'
+            encoding.dependency 'FishLamp/Cocoa/Strings'
             encoding.dependency 'FishLamp/Cocoa/CodeBuilder'
 
             encoding.subspec 'Xml' do |ss|
@@ -188,11 +190,15 @@ Pod::Spec.new do |fishlamp|
             ss.source_files = 'FishLampCocoa/Classes/Testables/**/*.{h,m}'
         end
 
+        cocoa.subspec 'RetryHandler' do |ss|
+            ss.dependency 'FishLamp/Core'
+            ss.source_files = 'FishLampCocoa/Classes/RetryHandler/**/*.{h,m}'
+        end
+
         cocoa.subspec 'Timer' do |ss|
             ss.dependency 'FishLamp/Core'
             ss.source_files = 'FishLampCocoa/Classes/Timer/**/*.{h,m}'
         end
-        
 
         cocoa.subspec 'Async' do |ss|
             ss.dependency 'FishLamp/Core'
@@ -209,47 +215,122 @@ Pod::Spec.new do |fishlamp|
         end
 
         cocoa.subspec 'Database' do |ss|
-            ss.dependency 'FishLamp/Cocoa/Storage'
+            ss.dependency 'FishLamp/Core'
             ss.dependency 'FishLamp/Cocoa/ModelObject'
+            ss.dependency 'FishLamp/Cocoa/ObjcRuntime'
 
             ss.source_files = 'FishLampCocoa/Classes/Database/**/*.{h,m}'
             ss.library = 'sqlite3'
         end
 
-        cocoa.subspec 'NetworkActivity' do |ss|
-            ss.dependency 'FishLamp/Core'
-            ss.dependency 'FishLamp/Cocoa/Events'
-            
-            ss.source_files = "FishLamp/Cocoa/Classes/NetworkActivity/**/*.{h,m}"
+        cocoa.subspec 'ObjectDatabase' do |ss|
+            ss.dependency 'FishLamp/Cocoa/Database'
+            ss.dependency 'FishLamp/Cocoa/Storage'
+            ss.dependency 'FishLamp/Cocoa/ModelObject'
+            ss.dependency 'FishLamp/Cocoa/Services'
+            ss.dependency 'FishLamp/Cocoa/Async'
+
+            ss.source_files = 'FishLampCocoa/Classes/ObjectDatabase/**/*.{h,m}'
         end
 
-        cocoa.subspec 'Networking' do |ss|
+        cocoa.subspec 'Networking' do |network|
 
-            ss.dependency 'FishLamp/Core'
+            network.dependency 'FishLamp/Core'
+
+            network.subspec 'Activity' do |ss|
+                ss.dependency 'FishLamp/Cocoa/Events'
+                ss.source_files = 'FishLampCocoa/Classes/Networking/Activity/**/*.{h,m}'
+            end
             
-            ss.dependency 'FishLamp/Cocoa/Authentication'
-            ss.dependency 'FishLamp/Cocoa/BundleUtils'
-            ss.dependency 'FishLamp/Cocoa/CodeBuilder'
-            ss.dependency 'FishLamp/Cocoa/Services'
-            ss.dependency 'FishLamp/Cocoa/StringBuilder'
-            ss.dependency 'FishLamp/Cocoa/Timer'
-            ss.dependency 'FishLamp/Cocoa/NetworkActivity'
+            network.subspec 'Errors' do |ss|
+                ss.source_files = 'FishLampCocoa/Classes/Networking/Errors/**/*.{h,m}'
+            end
 
-            ss.dependency 'FishLamp/Cocoa/Encoding'
-            ss.dependency 'FishLamp/Cocoa/Async'
-            ss.dependency 'FishLamp/Cocoa/ModelObject'
+            network.subspec 'Reachability' do |ss|
+                ss.ios.frameworks = 'SystemConfiguration'
+                ss.osx.frameworks = 'SystemConfiguration'
 
-            ss.ios.frameworks = 'CFNetwork'
-            ss.osx.frameworks = 'CFNetwork'
+                ss.source_files = 'FishLampCocoa/Classes/Networking/Reachability/**/*.{h,m}'
+            end
 
-            ss.source_files = 'FishLampCocoa/Classes/Networking/**/*.{h,m}'
+            network.subspec 'Sinks' do |ss|
+                ss.source_files = 'FishLampCocoa/Classes/Networking/Sinks/**/*.{h,m}'
+            end
+
+            network.subspec 'Streams' do |ss|
+                ss.dependency 'FishLamp/Cocoa/Events'
+                ss.dependency 'FishLamp/Cocoa/Timer'
+                ss.dependency 'FishLamp/Cocoa/Async'
+                ss.dependency 'FishLamp/Cocoa/Networking/Sinks'
+
+                ss.ios.frameworks = 'CFNetwork'
+                ss.osx.frameworks = 'CFNetwork'
+
+                ss.source_files = 'FishLampCocoa/Classes/Networking/Streams/**/*.{h,m}'
+            end
+
+            network.subspec 'ProtocolSupport' do |ss|
+                ss.dependency 'FishLamp/Cocoa/Async'
+                ss.dependency 'FishLamp/Cocoa/RetryHandler'
+                ss.dependency 'FishLamp/Cocoa/BundleUtils'
+                ss.dependency 'FishLamp/Cocoa/CodeBuilder'
+                ss.dependency 'FishLamp/Cocoa/Encoding'
+                ss.dependency 'FishLamp/Cocoa/ModelObject'
+                ss.dependency 'FishLamp/Cocoa/Authentication'
+                ss.dependency 'FishLamp/Cocoa/Services'
+                ss.dependency 'FishLamp/Cocoa/Strings'
+                ss.dependency 'FishLamp/Cocoa/Events'
+                ss.dependency 'FishLamp/Cocoa/Timer'
+
+                ss.dependency 'FishLamp/Cocoa/Networking/Activity'
+                ss.dependency 'FishLamp/Cocoa/Networking/Streams'
+                ss.dependency 'FishLamp/Cocoa/Networking/Sinks'
+                ss.dependency 'FishLamp/Cocoa/Networking/Reachability'
+                ss.dependency 'FishLamp/Cocoa/Networking/Errors'
+            end
+
+            network.subspec 'DNS' do |ss|
+                ss.dependency 'FishLamp/Cocoa/Networking/ProtocolSupport'
+                ss.source_files = 'FishLampCocoa/Classes/Networking/Protocols/DNS/**/*.{h,m}'
+            end
+
+            network.subspec 'HTTP' do |ss|
+                ss.dependency 'FishLamp/Cocoa/Networking/ProtocolSupport'
+                ss.source_files = 'FishLampCocoa/Classes/Networking/Protocols/HTTP/**/*.{h,m}'
+            end
+
+            network.subspec 'Json' do |ss|
+                ss.dependency 'FishLamp/Cocoa/Networking/HTTP'
+                ss.source_files = 'FishLampCocoa/Classes/Networking/Protocols/Json/**/*.{h,m}'
+            end
+
+            network.subspec 'Soap' do |ss|
+                ss.dependency 'FishLamp/Cocoa/Networking/HTTP'
+                ss.source_files = 'FishLampCocoa/Classes/Networking/Protocols/Soap/**/*.{h,m}'
+            end
+
+            network.subspec 'Oauth' do |ss|
+                ss.dependency 'FishLamp/Cocoa/Networking/HTTP'
+                ss.source_files = 'FishLampCocoa/Classes/Networking/Protocols/Oauth/**/*.{h,m}'
+            end
+
+            network.subspec 'Tcp' do |ss|
+                ss.dependency 'FishLamp/Cocoa/Networking/ProtocolSupport'
+                ss.source_files = 'FishLampCocoa/Classes/Networking/Protocols/Tcp/**/*.{h,m}'
+            end
+
+            network.subspec 'XmlRpc' do |ss|
+                ss.dependency 'FishLamp/Cocoa/Networking/ProtocolSupport'
+                ss.source_files = 'FishLampCocoa/Classes/Networking/Protocols/XmlRpc/**/*.{h,m}'
+            end
+
         end
 
         cocoa.subspec 'CodeGenerator' do |ss|
             ss.dependency 'FishLamp/Core'
             ss.dependency 'FishLamp/Cocoa/ModelObject'
             ss.dependency 'FishLamp/Cocoa/CodeBuilder'
-            ss.dependency 'FishLamp/Cocoa/StringBuilder'		
+            ss.dependency 'FishLamp/Cocoa/Strings'
             ss.dependency 'FishLamp/Cocoa/Events'		
             ss.dependency 'FishLamp/Cocoa/Files'		
             ss.dependency 'FishLamp/Cocoa/Containers'		
@@ -451,7 +532,7 @@ Pod::Spec.new do |fishlamp|
 
 		osx.subspec 'BreadcrumbBarViewController' do |ss|
 			ss.dependency 'FishLamp/OSX/Core'		
-            ss.dependency 'FishLamp/CoreTextUtils'
+            ss.dependency 'FishLamp/Cocoa/CoreTextUtils'
 
 			ss.source_files = 'FishLampOSX/Classes/ViewControllers/BreadcrumbBarViewController/**/*.{h,m}'
 		end
@@ -462,7 +543,7 @@ Pod::Spec.new do |fishlamp|
 
 
             # TODO (MWF): decouple this
-            ss.dependency 'FishLamp/Cocoa/NetworkActivity'
+            ss.dependency 'FishLamp/Cocoa/Networking/Activity'
 
             # TODO (MWF): break panels out of here.
             ss.dependency 'FishLamp/Cocoa/Authentication'
@@ -479,4 +560,5 @@ Pod::Spec.new do |fishlamp|
 	end
     
 end
+
 

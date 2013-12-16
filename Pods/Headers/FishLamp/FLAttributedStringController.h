@@ -1,1 +1,1 @@
-../../../FishLamp/FishLampCocoa/Classes/StringBuilder/FLAttributedStringController.h
+../../../FishLamp/FishLampCocoa/Classes/Strings/FLAttributedStringController.h

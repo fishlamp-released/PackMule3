@@ -1,1 +1,1 @@
-../../../FishLamp/FishLampCocoa/Classes/StringBuilder/FLStringParser.h
+../../../FishLamp/FishLampCocoa/Classes/Strings/FLStringParser.h
