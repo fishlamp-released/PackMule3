@@ -1,0 +1,1 @@
+../../../FishLamp/FishLampCocoa/Classes/Encoding/Xml/XmlObjectBuilder/NSObject+FLXmlObjectBuilder.h

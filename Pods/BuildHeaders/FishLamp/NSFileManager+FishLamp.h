@@ -1,0 +1,1 @@
+../../../FishLamp/FishLampCocoa/Classes/Files/NSFileManager+FishLamp.h

@@ -1,0 +1,1 @@
+../../../FishLamp/FishLampCocoa/Classes/CodeGenerator/ObjectModel/Objects/FLCodeCreateObjectBaseClass.h

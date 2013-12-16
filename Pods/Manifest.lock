@@ -1,0 +1,159 @@
+PODS:
+  - FishLamp/Cocoa/Async (3.0.0):
+    - FishLamp/Cocoa/Events
+    - FishLamp/Cocoa/Timer
+    - FishLamp/Core
+  - FishLamp/Cocoa/BundleUtils (3.0.0):
+    - FishLamp/Core
+  - FishLamp/Cocoa/CodeBuilder (3.0.0):
+    - FishLamp/Cocoa/StringBuilder
+    - FishLamp/Core
+  - FishLamp/Cocoa/CodeGenerator (3.0.0):
+    - FishLamp/Cocoa/BundleUtils
+    - FishLamp/Cocoa/CodeBuilder
+    - FishLamp/Cocoa/Containers
+    - FishLamp/Cocoa/Events
+    - FishLamp/Cocoa/Files
+    - FishLamp/Cocoa/ModelObject
+    - FishLamp/Cocoa/ObjcRuntime
+    - FishLamp/Cocoa/StringBuilder
+    - FishLamp/Core
+  - FishLamp/Cocoa/ColorUtils (3.0.0):
+    - FishLamp/Cocoa/Compatibility
+    - FishLamp/Core
+  - FishLamp/Cocoa/Compatibility (3.0.0):
+    - FishLamp/Core
+  - FishLamp/Cocoa/Containers (3.0.0):
+    - FishLamp/Core
+  - FishLamp/Cocoa/Encoding (3.0.0):
+    - FishLamp/Cocoa/CodeBuilder
+    - FishLamp/Cocoa/Encoding/Base64
+    - FishLamp/Cocoa/Encoding/Html
+    - FishLamp/Cocoa/Encoding/Json
+    - FishLamp/Cocoa/Encoding/Soap
+    - FishLamp/Cocoa/Encoding/Url
+    - FishLamp/Cocoa/Encoding/Xml
+    - FishLamp/Cocoa/StringBuilder
+    - FishLamp/Core
+  - FishLamp/Cocoa/Encoding/Base64 (3.0.0):
+    - FishLamp/Cocoa/CodeBuilder
+    - FishLamp/Cocoa/StringBuilder
+    - FishLamp/Core
+  - FishLamp/Cocoa/Encoding/Html (3.0.0):
+    - FishLamp/Cocoa/CodeBuilder
+    - FishLamp/Cocoa/StringBuilder
+    - FishLamp/Core
+  - FishLamp/Cocoa/Encoding/Json (3.0.0):
+    - FishLamp/Cocoa/CodeBuilder
+    - FishLamp/Cocoa/StringBuilder
+    - FishLamp/Core
+  - FishLamp/Cocoa/Encoding/Soap (3.0.0):
+    - FishLamp/Cocoa/CodeBuilder
+    - FishLamp/Cocoa/StringBuilder
+    - FishLamp/Core
+  - FishLamp/Cocoa/Encoding/Url (3.0.0):
+    - FishLamp/Cocoa/CodeBuilder
+    - FishLamp/Cocoa/StringBuilder
+    - FishLamp/Core
+  - FishLamp/Cocoa/Encoding/Xml (3.0.0):
+    - FishLamp/Cocoa/CodeBuilder
+    - FishLamp/Cocoa/StringBuilder
+    - FishLamp/Core
+  - FishLamp/Cocoa/Events (3.0.0):
+    - FishLamp/Cocoa/Proxies
+    - FishLamp/Core
+  - FishLamp/Cocoa/Files (3.0.0):
+    - FishLamp/Core
+  - FishLamp/Cocoa/Geometry (3.0.0):
+    - FishLamp/Core
+  - FishLamp/Cocoa/ModelObject (3.0.0):
+    - FishLamp/Cocoa/ObjcRuntime
+    - FishLamp/Core
+  - FishLamp/Cocoa/Notifications (3.0.0):
+    - FishLamp/Core
+  - FishLamp/Cocoa/ObjcRuntime (3.0.0):
+    - FishLamp/Core
+  - FishLamp/Cocoa/Proxies (3.0.0):
+    - FishLamp/Core
+  - FishLamp/Cocoa/StringBuilder (3.0.0):
+    - FishLamp/Core
+  - FishLamp/Cocoa/Timer (3.0.0):
+    - FishLamp/Core
+  - FishLamp/Core (3.0.0):
+    - FishLamp/Core/Assertions
+    - FishLamp/Core/Errors
+    - FishLamp/Core/Required
+    - FishLamp/Core/SimpleLogger
+    - FishLamp/Core/Strings
+  - FishLamp/Core/Assertions (3.0.0):
+    - FishLamp/Core/Errors
+    - FishLamp/Core/Strings
+  - FishLamp/Core/Errors (3.0.0):
+    - FishLamp/Core/Required
+    - FishLamp/Core/Strings
+  - FishLamp/Core/Required (3.0.0)
+  - FishLamp/Core/SimpleLogger (3.0.0):
+    - FishLamp/Core/Assertions
+    - FishLamp/Core/Errors
+    - FishLamp/Core/Required
+    - FishLamp/Core/Strings
+  - FishLamp/Core/Strings (3.0.0)
+  - FishLamp/OSX/Core (3.0.0):
+    - FishLamp/Cocoa/ColorUtils
+    - FishLamp/Cocoa/Compatibility
+    - FishLamp/Cocoa/Geometry
+    - FishLamp/Core
+  - FishLamp/OSX/ErrorWindowController (3.0.0):
+    - FishLamp/Cocoa/ColorUtils
+    - FishLamp/Cocoa/Compatibility
+    - FishLamp/Cocoa/Geometry
+    - FishLamp/Core
+    - FishLamp/OSX/Core
+    - FishLamp/OSX/Utils
+  - FishLamp/OSX/TextViewController (3.0.0):
+    - FishLamp/Cocoa/ColorUtils
+    - FishLamp/Cocoa/Compatibility
+    - FishLamp/Cocoa/Geometry
+    - FishLamp/Core
+    - FishLamp/OSX/Core
+    - FishLamp/OSX/ViewAdditions
+  - FishLamp/OSX/TextViewLogger (3.0.0):
+    - FishLamp/Cocoa/ColorUtils
+    - FishLamp/Cocoa/Compatibility
+    - FishLamp/Cocoa/Geometry
+    - FishLamp/Core
+    - FishLamp/OSX/Core
+    - FishLamp/OSX/ViewAdditions
+  - FishLamp/OSX/Utils (3.0.0):
+    - FishLamp/Cocoa/ColorUtils
+    - FishLamp/Cocoa/Compatibility
+    - FishLamp/Cocoa/Geometry
+    - FishLamp/Cocoa/Notifications
+    - FishLamp/Core
+    - FishLamp/OSX/Core
+  - FishLamp/OSX/ViewAdditions (3.0.0):
+    - FishLamp/Cocoa/ColorUtils
+    - FishLamp/Cocoa/Compatibility
+    - FishLamp/Cocoa/Geometry
+    - FishLamp/Core
+    - FishLamp/OSX/Core
+  - HockeySDK-Mac (2.0.0)
+
+DEPENDENCIES:
+  - FishLamp/Cocoa/Async (from `FishLamp`)
+  - FishLamp/Cocoa/CodeGenerator (from `FishLamp`)
+  - FishLamp/Cocoa/Encoding (from `FishLamp`)
+  - FishLamp/OSX/ErrorWindowController (from `FishLamp`)
+  - FishLamp/OSX/TextViewController (from `FishLamp`)
+  - FishLamp/OSX/TextViewLogger (from `FishLamp`)
+  - HockeySDK-Mac (~> 2.0.0)
+
+EXTERNAL SOURCES:
+  FishLamp:
+    :path: FishLamp
+
+SPEC CHECKSUMS:
+  FishLamp: b00e7bfa355668b61f2c5b6f3a5dfd5173f4bdea
+  HockeySDK-Mac: 6962a05b59b1df0caa770a64b0b69912582a2e7b
+
+COCOAPODS: 0.28.0

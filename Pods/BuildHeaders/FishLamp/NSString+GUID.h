@@ -1,0 +1,1 @@
+../../../FishLamp/FishLampCore/Classes/Strings/NSString+GUID.h

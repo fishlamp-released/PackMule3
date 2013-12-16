@@ -1,0 +1,224 @@
+
+// To check if a library is compiled with CocoaPods you
+// can use the `COCOAPODS` macro definition which is
+// defined in the xcconfigs so it is available in
+// headers also when they are imported in the client
+// project.
+
+
+// FishLamp/Cocoa/Async
+#define COCOAPODS_POD_AVAILABLE_FishLamp_Cocoa_Async
+#define COCOAPODS_VERSION_MAJOR_FishLamp_Cocoa_Async 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_Cocoa_Async 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_Cocoa_Async 0
+
+// FishLamp/Cocoa/BundleUtils
+#define COCOAPODS_POD_AVAILABLE_FishLamp_Cocoa_BundleUtils
+#define COCOAPODS_VERSION_MAJOR_FishLamp_Cocoa_BundleUtils 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_Cocoa_BundleUtils 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_Cocoa_BundleUtils 0
+
+// FishLamp/Cocoa/CodeBuilder
+#define COCOAPODS_POD_AVAILABLE_FishLamp_Cocoa_CodeBuilder
+#define COCOAPODS_VERSION_MAJOR_FishLamp_Cocoa_CodeBuilder 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_Cocoa_CodeBuilder 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_Cocoa_CodeBuilder 0
+
+// FishLamp/Cocoa/CodeGenerator
+#define COCOAPODS_POD_AVAILABLE_FishLamp_Cocoa_CodeGenerator
+#define COCOAPODS_VERSION_MAJOR_FishLamp_Cocoa_CodeGenerator 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_Cocoa_CodeGenerator 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_Cocoa_CodeGenerator 0
+
+// FishLamp/Cocoa/ColorUtils
+#define COCOAPODS_POD_AVAILABLE_FishLamp_Cocoa_ColorUtils
+#define COCOAPODS_VERSION_MAJOR_FishLamp_Cocoa_ColorUtils 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_Cocoa_ColorUtils 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_Cocoa_ColorUtils 0
+
+// FishLamp/Cocoa/Compatibility
+#define COCOAPODS_POD_AVAILABLE_FishLamp_Cocoa_Compatibility
+#define COCOAPODS_VERSION_MAJOR_FishLamp_Cocoa_Compatibility 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_Cocoa_Compatibility 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_Cocoa_Compatibility 0
+
+// FishLamp/Cocoa/Containers
+#define COCOAPODS_POD_AVAILABLE_FishLamp_Cocoa_Containers
+#define COCOAPODS_VERSION_MAJOR_FishLamp_Cocoa_Containers 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_Cocoa_Containers 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_Cocoa_Containers 0
+
+// FishLamp/Cocoa/Encoding
+#define COCOAPODS_POD_AVAILABLE_FishLamp_Cocoa_Encoding
+#define COCOAPODS_VERSION_MAJOR_FishLamp_Cocoa_Encoding 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_Cocoa_Encoding 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_Cocoa_Encoding 0
+
+// FishLamp/Cocoa/Encoding/Base64
+#define COCOAPODS_POD_AVAILABLE_FishLamp_Cocoa_Encoding_Base64
+#define COCOAPODS_VERSION_MAJOR_FishLamp_Cocoa_Encoding_Base64 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_Cocoa_Encoding_Base64 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_Cocoa_Encoding_Base64 0
+
+// FishLamp/Cocoa/Encoding/Html
+#define COCOAPODS_POD_AVAILABLE_FishLamp_Cocoa_Encoding_Html
+#define COCOAPODS_VERSION_MAJOR_FishLamp_Cocoa_Encoding_Html 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_Cocoa_Encoding_Html 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_Cocoa_Encoding_Html 0
+
+// FishLamp/Cocoa/Encoding/Json
+#define COCOAPODS_POD_AVAILABLE_FishLamp_Cocoa_Encoding_Json
+#define COCOAPODS_VERSION_MAJOR_FishLamp_Cocoa_Encoding_Json 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_Cocoa_Encoding_Json 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_Cocoa_Encoding_Json 0
+
+// FishLamp/Cocoa/Encoding/Soap
+#define COCOAPODS_POD_AVAILABLE_FishLamp_Cocoa_Encoding_Soap
+#define COCOAPODS_VERSION_MAJOR_FishLamp_Cocoa_Encoding_Soap 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_Cocoa_Encoding_Soap 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_Cocoa_Encoding_Soap 0
+
+// FishLamp/Cocoa/Encoding/Url
+#define COCOAPODS_POD_AVAILABLE_FishLamp_Cocoa_Encoding_Url
+#define COCOAPODS_VERSION_MAJOR_FishLamp_Cocoa_Encoding_Url 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_Cocoa_Encoding_Url 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_Cocoa_Encoding_Url 0
+
+// FishLamp/Cocoa/Encoding/Xml
+#define COCOAPODS_POD_AVAILABLE_FishLamp_Cocoa_Encoding_Xml
+#define COCOAPODS_VERSION_MAJOR_FishLamp_Cocoa_Encoding_Xml 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_Cocoa_Encoding_Xml 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_Cocoa_Encoding_Xml 0
+
+// FishLamp/Cocoa/Events
+#define COCOAPODS_POD_AVAILABLE_FishLamp_Cocoa_Events
+#define COCOAPODS_VERSION_MAJOR_FishLamp_Cocoa_Events 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_Cocoa_Events 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_Cocoa_Events 0
+
+// FishLamp/Cocoa/Files
+#define COCOAPODS_POD_AVAILABLE_FishLamp_Cocoa_Files
+#define COCOAPODS_VERSION_MAJOR_FishLamp_Cocoa_Files 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_Cocoa_Files 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_Cocoa_Files 0
+
+// FishLamp/Cocoa/Geometry
+#define COCOAPODS_POD_AVAILABLE_FishLamp_Cocoa_Geometry
+#define COCOAPODS_VERSION_MAJOR_FishLamp_Cocoa_Geometry 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_Cocoa_Geometry 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_Cocoa_Geometry 0
+
+// FishLamp/Cocoa/ModelObject
+#define COCOAPODS_POD_AVAILABLE_FishLamp_Cocoa_ModelObject
+#define COCOAPODS_VERSION_MAJOR_FishLamp_Cocoa_ModelObject 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_Cocoa_ModelObject 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_Cocoa_ModelObject 0
+
+// FishLamp/Cocoa/Notifications
+#define COCOAPODS_POD_AVAILABLE_FishLamp_Cocoa_Notifications
+#define COCOAPODS_VERSION_MAJOR_FishLamp_Cocoa_Notifications 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_Cocoa_Notifications 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_Cocoa_Notifications 0
+
+// FishLamp/Cocoa/ObjcRuntime
+#define COCOAPODS_POD_AVAILABLE_FishLamp_Cocoa_ObjcRuntime
+#define COCOAPODS_VERSION_MAJOR_FishLamp_Cocoa_ObjcRuntime 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_Cocoa_ObjcRuntime 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_Cocoa_ObjcRuntime 0
+
+// FishLamp/Cocoa/Proxies
+#define COCOAPODS_POD_AVAILABLE_FishLamp_Cocoa_Proxies
+#define COCOAPODS_VERSION_MAJOR_FishLamp_Cocoa_Proxies 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_Cocoa_Proxies 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_Cocoa_Proxies 0
+
+// FishLamp/Cocoa/StringBuilder
+#define COCOAPODS_POD_AVAILABLE_FishLamp_Cocoa_StringBuilder
+#define COCOAPODS_VERSION_MAJOR_FishLamp_Cocoa_StringBuilder 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_Cocoa_StringBuilder 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_Cocoa_StringBuilder 0
+
+// FishLamp/Cocoa/Timer
+#define COCOAPODS_POD_AVAILABLE_FishLamp_Cocoa_Timer
+#define COCOAPODS_VERSION_MAJOR_FishLamp_Cocoa_Timer 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_Cocoa_Timer 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_Cocoa_Timer 0
+
+// FishLamp/Core
+#define COCOAPODS_POD_AVAILABLE_FishLamp_Core
+#define COCOAPODS_VERSION_MAJOR_FishLamp_Core 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_Core 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_Core 0
+
+// FishLamp/Core/Assertions
+#define COCOAPODS_POD_AVAILABLE_FishLamp_Core_Assertions
+#define COCOAPODS_VERSION_MAJOR_FishLamp_Core_Assertions 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_Core_Assertions 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_Core_Assertions 0
+
+// FishLamp/Core/Errors
+#define COCOAPODS_POD_AVAILABLE_FishLamp_Core_Errors
+#define COCOAPODS_VERSION_MAJOR_FishLamp_Core_Errors 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_Core_Errors 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_Core_Errors 0
+
+// FishLamp/Core/Required
+#define COCOAPODS_POD_AVAILABLE_FishLamp_Core_Required
+#define COCOAPODS_VERSION_MAJOR_FishLamp_Core_Required 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_Core_Required 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_Core_Required 0
+
+// FishLamp/Core/SimpleLogger
+#define COCOAPODS_POD_AVAILABLE_FishLamp_Core_SimpleLogger
+#define COCOAPODS_VERSION_MAJOR_FishLamp_Core_SimpleLogger 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_Core_SimpleLogger 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_Core_SimpleLogger 0
+
+// FishLamp/Core/Strings
+#define COCOAPODS_POD_AVAILABLE_FishLamp_Core_Strings
+#define COCOAPODS_VERSION_MAJOR_FishLamp_Core_Strings 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_Core_Strings 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_Core_Strings 0
+
+// FishLamp/OSX/Core
+#define COCOAPODS_POD_AVAILABLE_FishLamp_OSX_Core
+#define COCOAPODS_VERSION_MAJOR_FishLamp_OSX_Core 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_OSX_Core 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_OSX_Core 0
+
+// FishLamp/OSX/ErrorWindowController
+#define COCOAPODS_POD_AVAILABLE_FishLamp_OSX_ErrorWindowController
+#define COCOAPODS_VERSION_MAJOR_FishLamp_OSX_ErrorWindowController 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_OSX_ErrorWindowController 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_OSX_ErrorWindowController 0
+
+// FishLamp/OSX/TextViewController
+#define COCOAPODS_POD_AVAILABLE_FishLamp_OSX_TextViewController
+#define COCOAPODS_VERSION_MAJOR_FishLamp_OSX_TextViewController 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_OSX_TextViewController 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_OSX_TextViewController 0
+
+// FishLamp/OSX/TextViewLogger
+#define COCOAPODS_POD_AVAILABLE_FishLamp_OSX_TextViewLogger
+#define COCOAPODS_VERSION_MAJOR_FishLamp_OSX_TextViewLogger 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_OSX_TextViewLogger 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_OSX_TextViewLogger 0
+
+// FishLamp/OSX/Utils
+#define COCOAPODS_POD_AVAILABLE_FishLamp_OSX_Utils
+#define COCOAPODS_VERSION_MAJOR_FishLamp_OSX_Utils 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_OSX_Utils 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_OSX_Utils 0
+
+// FishLamp/OSX/ViewAdditions
+#define COCOAPODS_POD_AVAILABLE_FishLamp_OSX_ViewAdditions
+#define COCOAPODS_VERSION_MAJOR_FishLamp_OSX_ViewAdditions 3
+#define COCOAPODS_VERSION_MINOR_FishLamp_OSX_ViewAdditions 0
+#define COCOAPODS_VERSION_PATCH_FishLamp_OSX_ViewAdditions 0
+
+// HockeySDK-Mac
+#define COCOAPODS_POD_AVAILABLE_HockeySDK_Mac
+#define COCOAPODS_VERSION_MAJOR_HockeySDK_Mac 2
+#define COCOAPODS_VERSION_MINOR_HockeySDK_Mac 0
+#define COCOAPODS_VERSION_PATCH_HockeySDK_Mac 0
+

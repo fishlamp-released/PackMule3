@@ -1,0 +1,1 @@
+../../../FishLamp/FishLampCocoa/Classes/CodeGenerator/Objc/Setup-Deprecated/FLObjcCodeGenerator+Setup.h

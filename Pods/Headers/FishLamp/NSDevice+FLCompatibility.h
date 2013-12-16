@@ -1,0 +1,1 @@
+../../../FishLamp/FishLampCocoa/Classes/Compatibility/OSX/NSDevice+FLCompatibility.h

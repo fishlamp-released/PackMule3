@@ -1,0 +1,1 @@
+../../../FishLamp/FishLampCocoa/Classes/CodeGenerator/Objc/ObjectModel/Variables/FLObjcLocalVariable.h

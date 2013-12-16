@@ -1,0 +1,1 @@
+PODS_PACKMULE_FISHLAMP_OTHER_LDFLAGS = -framework ApplicationServices -framework Cocoa -framework CoreFoundation -framework CoreServices -framework Foundation -framework Quartz -framework QuartzCore -framework Security -framework SystemConfiguration

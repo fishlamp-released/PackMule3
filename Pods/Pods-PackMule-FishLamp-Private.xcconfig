@@ -1,0 +1,5 @@
+#include "Pods-PackMule-FishLamp.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/FishLamp" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/FishLamp" "${PODS_ROOT}/Headers/HockeySDK-Mac"
+OTHER_LDFLAGS = -ObjC ${PODS_PACKMULE_FISHLAMP_OTHER_LDFLAGS}
+PODS_ROOT = ${SRCROOT}
