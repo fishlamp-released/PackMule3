@@ -7,8 +7,8 @@
 //
 
 
-#import "FishLampCore.h"
-#import "FLCodeGenerator.h"
+#import <FishLampCore.h>
+#import <FLCodeGenerator.h>
 
 @class FLCodeViewController;
 @class FLResultsViewController;

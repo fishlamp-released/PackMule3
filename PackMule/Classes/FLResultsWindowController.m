@@ -9,6 +9,8 @@
 
 #import "FLResultsWindowController.h"
 
+#import <FishLampCore.h>
+
 @interface FLResultsWindowController ()
 @end
 

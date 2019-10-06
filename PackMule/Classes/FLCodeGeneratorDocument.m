@@ -161,7 +161,8 @@ generationDidFailForProject:(FLCodeProject*) project
     FLCodeGeneratorProjectProvider* provider = [FLCodeGeneratorProjectProvider codeGeneratorProjectProvider:[self fileURL]];
     FLObjcCodeGenerator* generator = [FLObjcCodeGenerator  objcCodeGenerator:provider];
 
-    [generator addListener:[FLMainThreadObject mainThreadObject:self.nonretained_fl]];
+#pragma warn this is commented out
+//    [generator addListener:[FLMainThreadObject mainThreadObject:self.nonretained_fl]];
 
     [[FLOperationContext defaultContext] queueOperation:generator completion:^(FLPromisedResult result){
         

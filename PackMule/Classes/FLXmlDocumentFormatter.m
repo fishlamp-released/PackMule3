@@ -7,7 +7,7 @@
 //
 
 #import "FLXmlDocumentFormatter.h"
-#import "FLXmlParser.h"
+#import <FLXmlParser.h>
 
 #define XMLOPTIONS NSXMLNodePreserveCDATA | NSXMLNodeCompactEmptyElement | NSXMLDocumentTidyXML
 

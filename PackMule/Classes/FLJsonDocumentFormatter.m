@@ -7,7 +7,8 @@
 //
 
 #import "FLJsonDocumentFormatter.h"
-#import "FLJsonParser.h"
+#import <FishLampCore.h>
+#import <FLJsonParser.h>
 
 @implementation FLJsonDocumentFormatter
 

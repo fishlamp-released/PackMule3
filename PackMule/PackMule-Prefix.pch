@@ -5,8 +5,10 @@
 //
 
 #ifdef __OBJC__
-    #import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
+#import <Cocoa/Cocoa.h>
+#import <AppKit/AppKit.h>
 
-    #import "FishLampCore.h"
+//    #import <FishLamp_macOS/FishLamp.h>
 
 #endif
